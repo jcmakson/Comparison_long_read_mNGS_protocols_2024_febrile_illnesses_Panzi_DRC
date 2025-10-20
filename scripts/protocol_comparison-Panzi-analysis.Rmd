@@ -1,0 +1,779 @@
+---
+title: "Comparison and evaluation of long-read shotgun metagenomic protocols applied
+  for investigating the unknown outbreak in Panzi, the Democratic Republic of the
+  Congo"
+  
+author: "Makangara-Cigolo et al. 2025"
+
+date: "2025-10-16"
+output: prettydoc::html_pretty
+#output: flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+**Background**\
+Metagenomic next-generation sequencing (mNGS) has emerged as a powerful tool for the unbiased detection of pathogens during outbreak investigations. However, its effectiveness can be limited by the high abundance of host-derived nucleic acid (NA), which reduces pathogen detection sensitivity. Long-read sequencing technologies offer key advantages in genome assembly and pathogen resolution, but its performance depends on sample type and enrichment protocol. In response to an outbreak of an unknown febrile illness in Panzi, Democratic Republic of the Congo (DRC) in late 2024, mNGS were used as tool for lab investigation. Here, we evaluated and compared three long-read mNGS protocols used during investigation: standard SISPA using random nanomers, and eSISPA using a set of 96 non-ribosomal primers with and without PtCl4 sample treatment. We evaluated sequencing quality, host depletion efficiency, and taxonomic profiling using CZID webtool. We applied a background model with a z-score \> 1 threshold to filter taxa and focus on clinically relevant pathogens.
+
+**Results**\
+We re-sequenced 15 samples (8 blood samples and 7 oral swabs). eSISPA-based protocols showed high sequencing yield, enhanced host NA depletion and detection sensitivity for diverse pathogens compared to standard SISPA. Taxonomic profiling showed protocol-dependent differences in microbial diversity and abundance, with PtCl4 eSISPA and Standard SISPA detecting the highest number of unique taxa, in blood and swab samples, respectively. PtCl4 eSISPA detected bacteria identified by qPCR; Klebsiella in 5 samples, eSISPA detected Salmonella and Klebsiella in 3 samples, each, standard SISPA detected Plasmodium in 6 samples. However, eSISPA-based protocols failed to recover Plasmodium reads in 5 samples despite positive diagnostics, likely due to sample degradation, as experiments were not performed in parallel. Venn diagram highlighted both shared and unique taxa across protocols, underscoring the impact of protocol selection on metagenomic outcomes.
+
+**Conclusions**
+
+Our study reveals protocol-dependent differences in sequencing yield and host nucleic acid depletion, especially in swab samples. In blood, trade-offs affect consistency, host depletion, and pathogen sensitivity. No single method proved universally optimal, highlighting the need for parallel testing with high-quality, pathogen-positive samples. However, eSISPA-based protocols is promissing for outbreak investigations by depleting host-NA and improving pathogen detection, though further validation is required.
+
+**Keywords:**
+
+Metagenomics, long-reads sequencing, SISPA, eSISPA, pathogen detection, host depletion, outbreak investigation, Democratic Republic of the Congo, Oxford Nanopore Technologies
+
+## Data analysis
+
+# Install packages and load libraries
+
+```{r echo=TRUE, message=FALSE}
+if(!require(pacman)) install.packages("pacman")
+pacman::p_load( 
+                broom, flexdashboard, drc, esquisse, flextable, ggplot2, ggpubr, 
+                ggsignif, gridExtra, gt, gtsummary, here, inspectdf, 
+                janitor, officer, patchwork,purrr, rstudioapi, scales, 
+                stringr, tidyverse, vegan, webshot2, rlang 
+             )
+```
+
+## Set path for working directory
+
+```{r echo=TRUE, message=FALSE}
+WD <- here()
+output_dir <- here("outputs")
+```
+
+# Download data
+
+```{r echo=TRUE, message=FALSE}
+
+# Dataset for raw data sequencing  QC 
+
+read_QC           <- read_csv(here("data", "data_fig_1_QC_NanoPlot.csv"))
+panzi_raw_data    <- read_csv(here("data", "data_fig_2_table_1_raw_seqkit_stat.csv"))
+minimap_host      <- read_csv(here("data", "data_fig_3a_3b_minimap_report_summary_2.csv"))
+
+# CZID dataset for normalized reads distribution
+
+esispa_blood_hist     <- read_csv(here("data", "data_fig_4a_czid_esispa_blood_all.csv"))
+esispa_swab_hist      <- read_csv(here("data", "data_fig_4b_czid_esispa_swab_all.csv"))
+std_sispa_blood_hist  <- read_csv(here("data", "data_fig_4c_czid_sispa_blood_all.csv"))
+std_sispa_swab_hist   <- read_csv(here("data", "data_fig_4d_czid_sispa_swab_all.csv"))
+
+# Z-score dataset for normalized reads distribution
+
+z_score_esispa_blood_hist <- read_csv(here("data", "data_fig_5a_czid_zscore_esispa_blood_all.csv"))
+z_score_esispa_swab_hist  <- read_csv(here("data", "data_fig_5b_czid_zscore_esispa_swab_all.csv"))
+z_score_sispa_blood_hist  <- read_csv(here("data", "data_fig_5c_czid_zscore_sispa_blood_all.csv"))
+z_score_sispa_swab_hist   <- read_csv(here("data", "data_fig_5d_czid_zscore_sispa_swab_all.csv"))
+
+```
+
+# Data analysis and figures design
+
+## Fig.1(a-b) : Sequencing raw data qualitity control using NanoPlot and NanoStat
+
+```{r echo=FALSE, message=FALSE}
+
+# Function for distribution of reads per samples per protocol including NTC
+
+# Color palette for sample_category
+
+sample_colour <- c(
+                    "NTC blood" = "#E41A1C",
+                    "NTC swab"  = "#66C2A5",
+                    "Sample"    = "#1E90FF"
+                  )
+
+# Function to plot the sequencing raw reads quality control distributions
+
+plot_distribution_separate <- function(data, y_var, plot_title = "",
+                                       protocols = c("eSISPA", "PtCl4 eSISPA", "Standard SISPA"),
+                                       y_limits = NULL, y_breaks = NULL) {
+  stopifnot(is.data.frame(data))
+  yq <- enquo(y_var)
+  y_label <- gsub("_", " ", as_label(yq))
+  
+  make_plot <- function(df, label) {
+    if (nrow(df) == 0) return(ggplot() + theme_void() + ggtitle(paste("No data:", label)))
+    summary_df <- df %>%
+      group_by(short_name_ID, sample_category, protocol) %>%
+      summarise(y_mean = mean(!!yq, na.rm = TRUE),
+                y_sd   = sd(!!yq, na.rm = TRUE),
+                n      = sum(!is.na(!!yq)),
+                .groups = "drop") %>%
+      filter(n > 0)
+    if (nrow(summary_df) == 0) return(ggplot() + theme_void() + ggtitle(paste("No summarized data:", label)))
+    
+    summary_df <- summary_df %>%
+      mutate(protocol = factor(protocol, levels = protocols),
+             sample_category = factor(sample_category, levels = names(sample_colour)),
+             short_name_ID = factor(short_name_ID, levels = unique(short_name_ID)))
+    
+    p <- ggplot(summary_df, aes(x = short_name_ID, y = y_mean, fill = sample_category)) +
+      geom_col(position = position_dodge(width = 0.6), width = 0.6) +
+      geom_errorbar(aes(ymin = y_mean - y_sd, ymax = y_mean + y_sd),
+                    position = position_dodge(width = 0.6), width = 0.2, color = "black") +
+      scale_fill_manual(values = sample_colour, na.value = "grey50") +
+      facet_wrap(~ protocol, scales = "free_x", nrow = 1) +
+      labs(title = paste(plot_title, "-", label), x = NULL, y = y_label, fill = "Sample category") +
+      theme_classic(base_size = 14) +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+            axis.text.y = element_text(size = 12),
+            axis.title.y = element_text(size = 14, face = "bold"),
+            plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+            strip.text = element_text(size = 12),
+            legend.position = "right",
+            legend.title = element_text(size = 12),
+            legend.text = element_text(size = 11))
+    
+    # Apply requested fixed y limits
+    
+    if (!is.null(y_limits)) {
+      if (!is.numeric(y_limits) || length(y_limits) != 2) stop("y_limits must be numeric length 2")
+      p <- p + coord_cartesian(ylim = y_limits)
+      if (!is.null(y_breaks)) {
+        p <- p + scale_y_continuous(breaks = y_breaks, expand = expansion(mult = c(0, 0.02)))
+      } else {
+        p <- p + scale_y_continuous(expand = expansion(mult = c(0, 0.02)))
+      }
+    } else {
+      ymax <- max(summary_df$y_mean + coalesce(summary_df$y_sd, 0), na.rm = TRUE)
+      ymax <- ifelse(is.finite(ymax) && ymax > 0, ymax * 1.05, 1)
+      p <- p + coord_cartesian(ylim = c(0, ymax)) +
+        scale_y_continuous(expand = expansion(mult = c(0, 0.02)))
+    }
+    p
+  }
+  
+  p_blood <- make_plot(filter(data, Sample_type == "Blood Sample"), "Blood Sample")
+  p_swab  <- make_plot(filter(data, Sample_type == "Oral swab"), "Oral swabs")
+  ggarrange(p_blood, p_swab, ncol = 1, nrow = 2, common.legend = FALSE)
+}
+# Save the plot in pdf and png
+
+save_plot <- function(plot_obj, name, width = 14, height = 10, dpi = 300) {
+  safe_base <- tolower(gsub("[^0-9A-Za-z]+", "_", basename(name)))
+  safe_base <- sub("^_+|_+$", "", safe_base)
+  if (safe_base == "") safe_base <- "plot"
+  out_pdf <- file.path(output_dir, paste0(safe_base, ".pdf"))
+  out_png <- file.path(output_dir, paste0(safe_base, ".png"))
+  ggsave(out_pdf, plot = plot_obj, device = "pdf", width = width, height = height)
+  ggsave(out_png, plot = plot_obj, device = "png", width = width, height = height, dpi = dpi)
+  invisible(c(pdf = out_pdf, png = out_png))
+}
+
+# Apply the function on data :
+
+p1 <- plot_distribution_separate(read_QC, Median_read_quality, 
+                                 "Median read quality",
+                                  y_limits = c(0,20), 
+                                 y_breaks = seq(0,20,5))
+p2 <- plot_distribution_separate(read_QC, Median_read_length, 
+                                 "Read length median",
+                                  y_limits = c(0,1250), 
+                                 y_breaks = seq(0,1250,250))
+# To display
+
+print(p1)
+print(p2)
+
+# Save figures in a the outputs folder
+
+save_plot(p1, "fig_1a_median_read_quality", width = 12, height = 8)
+save_plot(p2, "fig_1b_median_read_length", width = 12, height = 8)
+
+```
+
+## Table 1-2 : Summary Tables of Raw SeqKit Statistics for Panzi Samples
+
+The output file is saved as word document in the "outputs" folder
+
+```{r echo=FALSE, message=FALSE}
+
+# Clean and filter data 
+
+panzi_data_raw_sum <- panzi_raw_data %>%
+  mutate(
+    protocol = recode(protocol, "SISPA" = "Standard SISPA"),
+    protocol = factor(protocol, levels = c("eSISPA", "PtCl4 eSISPA", "Standard SISPA")),
+    sample_type = tolower(sample_type)
+  ) %>%
+  filter(sample_type %in% c("blood sample", "oral swab"))
+
+# Create summary tables per sample_type
+
+tbls_raw_filtered <- panzi_data_raw_sum %>%
+  mutate(
+    `Reads number (K)` = num_seqs / 1e3,
+    `Total bases (Mb)` = sum_len / 1e6
+  ) %>%
+  split(.$sample_type) %>%
+  map(function(df) {
+    sample_label <- stringr::str_to_title(unique(df$sample_type))
+    df %>%
+      select(protocol, `Reads number (K)`, `Total bases (Mb)`) %>%
+      tbl_summary(
+        by = protocol,
+        type = all_continuous() ~ "continuous2",
+        statistic = all_continuous() ~ "{median} ({p25}, {p75})"
+      ) %>%
+      add_overall() %>%
+      add_p() %>%
+      add_n() %>%
+      modify_header(label ~ paste0("**Metric - ", sample_label, "**"))
+  })
+
+# Stack and convert to gt
+
+my_data_combined_gt_raw <- tbl_stack(tbls_raw_filtered)
+my_data_combined_gt_raw_gt <- as_gt(my_data_combined_gt_raw)
+
+# Save the gt output in a figure
+
+save_gt <- function(gt_obj, out_prefix = NULL, name = "panzi_table_raw", output_dir = here("outputs")) {
+  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+  if (is.null(out_prefix)) {
+    safe <- tolower(gsub("[^0-9A-Za-z]+", "_", name))
+    out_prefix <- file.path(output_dir, safe)
+  } else {
+    out_prefix <- sub("\\.(pdf|png)$", "", out_prefix, ignore.case = TRUE)
+    dir.create(dirname(out_prefix), recursive = TRUE, showWarnings = FALSE)
+  }
+  out_pdf <- paste0(out_prefix, ".pdf")
+  out_png <- paste0(out_prefix, ".png")
+  gtsave(gt_obj, filename = out_pdf)
+  # gtsave to PNG may require webshot/webshot2; gtsave will call it if available
+  gtsave(gt_obj, filename = out_png)
+  message("Saved: ", out_pdf, " and ", out_png)
+  invisible(c(pdf = out_pdf, png = out_png))
+}
+
+# Save 
+
+save_gt(my_data_combined_gt_raw_gt, name = "table_1_raw_seqkit_stat")
+
+# `my_data_combined_gt_raw` is the gtsummary object created with tbl_stack()
+ft <- as_flex_table(my_data_combined_gt_raw)  
+
+doc <- read_docx()
+doc <- body_add_par(doc, "Panzi — Blood & Oral Swab summary", style = "heading 1")
+doc <- body_add_flextable(doc, ft)
+doc <- body_add_par(doc, "", style = "Normal")  # spacer
+
+output_docx <- file.path(output_dir, "table_1_raw_seqkit_stat.docx")
+print(doc, target = output_docx)
+doc <- read_docx()
+
+# Iterate tables (tbls_raw_filtered is a named list: "blood sample", "oral swab")
+i <- 1
+n <- length(tbls_raw_filtered)
+for (nm in names(tbls_raw_filtered)) {
+  ft <- as_flex_table(tbls_raw_filtered[[nm]])
+  title <- stringr::str_to_title(nm)
+  doc <- body_add_par(doc, paste0("Table: ", title), style = "heading 1")
+  doc <- body_add_flextable(doc, value = ft)
+  if (i < n) doc <- body_add_break(doc) # insert page break between tables
+  i <- i + 1
+}
+
+out_docx <- file.path(output_dir, "table_1_raw_seqkit_stat.docx")
+print(doc, target = out_docx)
+```
+
+## Fig.2(a-b) : Comparison of total bases (a) and total reads (b) generated per samples using seqkit statistics ouput
+
+```{r echo=FALSE, message=FALSE}
+
+# Function to generate SeqKit summary figures (total bases and reads number)
+
+generate_seqkit_figures <- function(df, output_dir,
+                                    width = 12, height = 8, dpi = 300) {
+  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  # Fig 2a: total bases (sum_len)
+  
+  p_totbases <- ggplot(df, aes(x = file_short, y = sum_len, fill = sample_type)) +
+    geom_col(position = position_dodge(width = 0.9), width = 0.5) +
+    geom_text(aes(label = label_number(scale = 1e-6, suffix = "M", accuracy = 0.1)(sum_len)),
+              position = position_dodge(width = 0.9), hjust = -0.1, vjust = 0.5, size = 3) +
+    labs(title = "Distribution of total bases generated per Protocol\nfor raw samples",
+         y = "Total bases (Mb)", x = NULL, fill = "Sample type") +
+    facet_wrap(vars(protocol), scales = "fixed") +
+    coord_flip() +
+    scale_y_continuous(
+      limits = c(0, 8e8),
+      labels = label_number(scale = 1e-6, suffix = "M", accuracy = 0.1)
+    ) +
+    theme_pubr(base_size = 14) +
+    theme(panel.grid.major.x = element_blank(),
+          plot.title = element_text(size = 15, face = "bold", hjust = 0.5),
+          axis.title.y = element_text(size = 13, face = "bold.italic"),
+          axis.title.x = element_text(size = 13, face = "bold.italic"),
+          axis.text.y = element_text(size = 12),
+          axis.text.x = element_text(size = 12 , angle = 90),
+          strip.text = element_text(size = 12),
+          legend.title = element_text(size = 12, face = "bold"),
+          legend.position = "right")
+  
+  # Save Fig 2a
+  
+  out1_pdf <- file.path(output_dir, "fig_2a_total_bases_raw_seqkit_stat.pdf")
+  out1_png <- file.path(output_dir, "fig_2a_total_bases_raw_seqkit_stat.png")
+  ggsave(out1_pdf, p_totbases, width = width, height = height, dpi = dpi)
+  ggsave(out1_png, p_totbases, width = width, height = height, dpi = dpi)
+  
+  # Fig 2b: Number of reads (num_seqs)
+  
+  p_reads <- ggplot(df, aes(x = file_short, y = num_seqs, fill = sample_type)) +
+    geom_col(position = position_dodge(width = 0.9), width = 0.5) +
+    geom_text(aes(label = label_number(scale = 1e-3, suffix = "K", accuracy = 0.1)(num_seqs)),
+              position = position_dodge(width = 0.9), hjust = -0.1, vjust = 0.5, size = 3) +
+    labs(title = "Distribution of raw reads number generated per Protocol",
+         y = "Reads number (K)", x = NULL, fill = "Sample type") +
+    facet_wrap(vars(protocol), scales = "fixed") +
+    coord_flip() +
+    scale_y_continuous(
+      limits = c(0, 1250000),
+      labels = label_number(scale = 1e-3, suffix = "K", accuracy = 0.1)
+    ) +
+    theme_pubr(base_size = 14) +
+    theme(panel.grid.major.x = element_blank(),
+          plot.title = element_text(size = 15, face = "bold", hjust = 0.5),
+          axis.title.y = element_text(size = 13, face = "bold.italic"),
+          axis.title.x = element_text(size = 13, face = "bold.italic"),
+          axis.text.y = element_text(size = 12),
+          axis.text.x = element_text(size = 12 , angle = 90),
+          strip.text = element_text(size = 12),
+          legend.title = element_text(size = 12, face = "bold"),
+          legend.position = "right")
+  
+  # Save Fig 2b
+  
+  out2_pdf <- file.path(output_dir, "fig_2b_reads_number_raw_seqkit_stat.pdf")
+  out2_png <- file.path(output_dir, "fig_2b_reads_number_raw_seqkit_stat.png")
+  ggsave(out2_pdf, p_reads, width = width, height = height, dpi = dpi)
+  ggsave(out2_png, p_reads, width = width, height = height, dpi = dpi)
+  
+ # Display the output
+  
+  message("Figures saved to: ", output_dir,
+          " (size = ", width, "x", height, " inches, dpi = ", dpi, ")")
+  
+  print(p_totbases)
+  print(p_reads)
+  
+  invisible(list(
+    total_bases = list(plot = p_totbases, pdf = out1_pdf, png = out1_png),
+    reads_number = list(plot = p_reads, pdf = out2_pdf, png = out2_png)
+  ))
+}
+
+# Run the figure generation
+
+res <- generate_seqkit_figures(panzi_raw_data, output_dir, width = 12, height = 8)
+
+```
+
+## Fig.3 (a-b) Distribution of reads per host and non host per protocol and sample
+
+```{r echo=FALSE, message=FALSE}
+
+# Reshape data for stacked bar plot
+df_long <- minimap_host %>%
+  mutate(
+    protocol = factor(protocol, levels = c("eSISPA", "PtCl4 eSISPA", "Standard SISPA")),
+    sample_type = factor(sample_type, levels = c("Blood samples", "Oral swab samples"))
+  )
+
+# Color palette
+reads_colours <- c("Host reads" = "#1E90FF", "Non-host reads" = "#E41A1C")
+
+# Separate blood and swab datasets
+blood_df <- df_long %>% filter(sample_type == "Blood samples")
+swab_df  <- df_long %>% filter(sample_type == "Oral swab samples")
+
+# -------------------- FRACTION PLOTS --------------------
+
+# Blood samples 
+
+blood_fraction <- ggplot(blood_df, 
+                        aes(x = short_name_id, y = fraction, fill = reads_types)) +
+                        geom_bar(stat = "identity") +
+                        facet_wrap(~protocol, scales = "free_x") +
+                        scale_fill_manual(values = reads_colours) +
+                        labs(title = "Host depletion reads fraction in blood samples", 
+                             y = "Fraction of reads (%)", 
+                             x = NULL, fill = "Reads Type") +
+                        theme_classic(base_size = 12) +
+                        theme(
+                          axis.text.x = element_text(angle = 90, hjust = 1, size = 12),
+                          plot.title = element_text(size = 16, face = "bold"),
+                          strip.text = element_text(size = 12)
+  )
+
+# Oral swab samples
+
+swab_fraction <- ggplot(swab_df, 
+                      aes(x = short_name_id, y = fraction, fill = reads_types)) +
+                      geom_bar(stat = "identity") +
+                      facet_wrap(~protocol, scales = "free_x") +
+                      scale_fill_manual(values = reads_colours) +
+                      labs(title = "Host depletion reads fraction in oral swab samples", 
+                            y = "Fraction of reads (%)", 
+                           x = NULL, 
+                           fill = "Reads Type") +
+                      theme_classic(base_size = 12) +
+                      theme(
+                        axis.text.x = element_text(angle = 90, hjust = 1, size = 12),
+                        plot.title = element_text(size = 16, face = "bold"),
+                        strip.text = element_text(size = 12)
+  )
+
+# Combine fraction plots
+combined_fraction <- ggarrange(
+  blood_fraction, swab_fraction,
+  labels = c("A", "B"),
+  ncol = 1, nrow = 2,
+  align = "v"
+)
+
+# Display figures
+
+print(blood_fraction)
+print(swab_fraction)
+print(combined_fraction)
+
+# Save fraction plots
+
+ggsave(file.path(output_dir, "fig_3a_host_depl_blood_prop_minimap_report_summary.png"), 
+       blood_fraction, width = 8, height = 5, dpi = 600)
+ggsave(file.path(output_dir, "fig_3a_host_depl_blood_prop_minimap_report_summary.pdf"), 
+       blood_fraction, width = 8, height = 7)
+ggsave(file.path(output_dir, "fig_3b_host_depl_swab_prop_minimap_report_summary.png"), 
+       swab_fraction, width = 8, height = 5, dpi = 600)
+ggsave(file.path(output_dir, "fig_3b_host_depl_swab_prop_minimap_report_summary.pdf"), 
+       swab_fraction, width = 8, height = 7)
+ggsave(file.path(output_dir, "fig_3_combined_host_depl_prop_minimap_report_summary.png"), 
+       combined_fraction, width = 10, height = 10, dpi = 600)
+ggsave(file.path(output_dir, "fig_3_combined_host_depl_prop_minimap_report_summary.pdf"), 
+       combined_fraction, width = 10, height = 10)
+
+
+# -------------------- ABSOLUTE PLOTS (log10) --------------------
+
+# Blood samples 
+
+blood_absolute <- ggplot(blood_df, 
+                  aes(x = short_name_id, y = log10(host_reads +1), fill = reads_types)) +
+                  geom_bar(stat = "identity") +
+                  facet_wrap(~protocol, scales = "free_x") +
+                  scale_fill_manual(values = reads_colours) +
+                  labs(title = "Host depletion absolute reads in blood samples", 
+                       y = "Log10 Read number", x = NULL, fill = "Reads Type") +
+                  theme_classic(base_size = 12) +
+                  theme(
+                    axis.text.x = element_text(angle = 90, hjust = 1, size = 12),
+                    plot.title = element_text(size = 16, face = "bold"),
+                    strip.text = element_text(size = 12)
+  )
+
+# Oral swab samples 
+
+swab_absolute <- ggplot(swab_df, 
+                aes(x = short_name_id, y = log10(host_reads +1), fill = reads_types)) +
+              geom_bar(stat = "identity") +
+              facet_wrap(~protocol, scales = "free_x") +
+              scale_fill_manual(values = reads_colours) +
+              labs(title = "Host depletion absolute reads in oral swab samples", 
+                   y = "Log10 Read number", x = NULL, 
+                   fill = "Reads Type") +
+              theme_classic(base_size = 12) +
+              theme(
+                axis.text.x = element_text(angle = 90, hjust = 1, size = 12),
+                plot.title = element_text(size = 16, face = "bold"),
+                strip.text = element_text(size = 12)
+  )
+
+# Combine plots in one plot
+
+combined_absolute <- ggarrange(
+                    blood_absolute, swab_absolute,
+                    labels = c("A", "B"),
+                    ncol = 1, nrow = 2,
+                    align = "v"
+)
+
+# Display figures 
+
+print(blood_absolute)
+print(swab_absolute)
+print(combined_absolute)
+
+# Save absolute plots
+
+ggsave(file.path(output_dir, "fig_3a_host_depl_blood_abs_minimap_report_summary.png"), 
+       blood_absolute, width = 8, height = 5, dpi = 600)
+ggsave(file.path(output_dir, "fig_3a_host_depl_blood_abs_minimap_report_summary.pdf"), 
+       blood_absolute, width = 8, height = 7)
+ggsave(file.path(output_dir, "fig_3b_host_depl_swab_abs_minimap_report_summary.png"), 
+       swab_absolute, width = 8, height = 5, dpi = 600)
+ggsave(file.path(output_dir, "fig_3b_host_depl_swab_abs_minimap_report_summary.pdf"), 
+       swab_absolute, width = 8, height = 7)
+ggsave(file.path(output_dir, "fig_3_combined_host_depl_abs_minimap_report_summary.png"), 
+       combined_absolute, width = 10, height = 10, dpi = 600)
+ggsave(file.path(output_dir, "fig_3_combined_host_depl_abs_minimap_report_summary.pdf"), 
+       combined_absolute, width = 10, height = 10)
+```
+
+## Fig.4-5(a-d) : Distribution of normalized reads per million based on the Z-score background model distribution
+
+### Fig.4(a-d) : Distribution of reads per millions without filtering the background noise
+
+```{r echo= FALSE, message=FALSE}
+
+# read length distribution per taxa category and per samples 
+
+nt_alignment_length_histo <- function(data_set, title) {
+  
+  # Clean the data
+  
+  data_clean <- data_set %>%
+    filter(!is.na(z_score) & z_score > 0) %>%
+    mutate(
+      category = ifelse(is.na(category), "Unclassified", category),
+      nt_alignment_length_log10 = log10(nt_alignment_length + 1)
+    )
+  
+  # Set category as factor with correct levels
+  
+  data_clean$category <- factor(data_clean$category, 
+                                levels = c("Unclassified", 
+                                           "archaea", 
+                                           "eukaryota",
+                                           "bacteria", 
+                                           "viruses"))
+  
+  # Color palette for category
+  
+  reads_colour <- c("Unclassified" = "#984ea3", 
+                    "bacteria" = "#1E90FF",
+                    "viruses" = "#E41A1C",  
+                    "eukaryota" ="#FF7F00"  ,  
+                    "archaea" = "#66C2A5"       
+  )
+  
+  # Identify NTC samples
+  ntc_samples <- data_clean %>%
+    filter(str_detect(tolower(short_name_id), "ntc"))
+  
+  # Calculate z-score threshold from NTCs
+  ntc_threshold <- if (nrow(ntc_samples) > 0) {
+    round(log10(max(ntc_samples$nt_alignment_length, na.rm = TRUE) + 1), 2)
+  } else {
+    NA
+  }
+  
+  # Check if multiple protocols exist
+  multiple_protocols <- length(unique(data_clean$protocol)) > 1
+  
+  # Set faceting formula
+  facet_formula <- if (multiple_protocols) {
+    short_name_id ~ protocol
+  } else {
+    short_name_id ~ protocol
+  }
+  
+  # Create the histogram plot
+  plot <- ggplot(data_clean, aes(x = nt_alignment_length_log10, fill = category)) +
+    geom_histogram(bins = 30, color = "black", na.rm = TRUE) +
+    scale_fill_manual(values = reads_colour) +
+    scale_x_continuous(
+      breaks = seq(0, 6, 0.5),
+      limits = c(0, 6)
+    ) +
+    ylim(0, 50)+
+    facet_grid(facet_formula) +
+    theme_classic() +
+    theme(
+      plot.title = element_text(size = 15, face = "bold", hjust = 0.5),
+      axis.title.x = element_text(face = "bold.italic"),
+      legend.position = "bottom",
+      plot.caption = element_text(size = 10, face = "italic", hjust = 0)
+    ) +
+    labs(
+      title = title,
+      x = expression(log[10](nt_alignment_length + 1)),
+      y= "Count",
+      fill = "Category"
+    )
+  
+  return(plot)
+}
+
+# Run data set 
+
+plot_1 <- nt_alignment_length_histo(z_score_esispa_blood_hist, "Distribution of reads \nper taxa and sample: eSISPA for blood samples")
+plot_2 <- nt_alignment_length_histo(z_score_esispa_swab_hist, "Distribution of reads \nper taxa and sample: eSISPA for oral swab samples")
+plot_3 <- nt_alignment_length_histo(z_score_sispa_blood_hist, "Distribution of reads \nper taxa and sample: Standard SISPA for blood samples")
+plot_4 <- nt_alignment_length_histo(z_score_sispa_swab_hist, "Distribution of reads \nper taxa and sample: Standard SISPA for oral swab samples")
+
+# Display plot
+
+print(plot_1)
+print(plot_2)
+print(plot_3)
+print(plot_4)
+
+# save plots as pdf and png files
+
+ggsave(file.path(output_dir,"fig_4a_dist_raw_reads_esispa_blood_plot.pdf"), plot = plot_1, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4b_dist_raw_reads_esispa_swab_plot.pdf"), plot = plot_2, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4c_dist_raw_reads_sispa_blood_plot.pdf"), plot = plot_3, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4d_dist_raw_reads_sispa_swab_plot.pdf"), plot = plot_4, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4a_dist_raw_reads_esispa_blood_plot.png"), plot = plot_1, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4b_dist_raw_reads_esispa_swab_plot.png"), plot = plot_2, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4c_dist_raw_reads_sispa_blood_plot.png"), plot = plot_3, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_4d_dist_raw_reads_sispa_swab_plot.png"), plot = plot_4, device = "png", height = 8, width = 6)
+
+```
+
+### Fig.5(a-d) : Distribution of z-score and setting the filtering threshold from the background noise
+
+```{r echo=FALSE, message=FALSE}
+
+# Define the function to plot the distribution of z-score and set up the threshold
+
+z_score_histo <- function(data_set, title) {
+
+    # Clean the data
+  
+  data_clean <- data_set %>%
+    filter(!is.na(z_score) & z_score > 0) %>%
+    mutate(
+      category = ifelse(is.na(category), "Unclassified", category),
+      z_score_log10 = log10(z_score + 1)
+      )
+  
+  # Set category as factor with correct levels
+  
+  data_clean$category <- factor(data_clean$category, 
+                                levels = c("Unclassified", 
+                                           "archaea", 
+                                           "eukaryota",
+                                           "bacteria", 
+                                           "viruses"))
+  # Color palette for category
+  
+  reads_colour <- c("Unclassified" = "#984ea3", 
+                    "bacteria" = "#1E90FF",
+                    "viruses" = "#E41A1C",  
+                    "eukaryota" ="#FF7F00"  ,  
+                    "archaea" = "#66C2A5"       
+                   )
+  
+  # Identify NTC samples
+  ntc_samples <- data_clean %>%
+    filter(str_detect(tolower(short_name_id), "ntc"))
+  
+  # Calculate z-score threshold from NTCs
+  ntc_threshold <- if (nrow(ntc_samples) > 0) {
+    round(log10(max(ntc_samples$z_score, na.rm = TRUE) + 1), 2)
+  } else {
+    NA
+  }
+  
+  # Check if multiple protocols exist
+  multiple_protocols <- length(unique(data_clean$protocol)) > 1
+  
+  # Set faceting formula
+  facet_formula <- if (multiple_protocols) {
+    short_name_id ~ protocol
+  } else {
+    short_name_id ~ protocol
+  }
+  
+  # Create the histogram plot
+  plot <- ggplot(data_clean, aes(x = z_score_log10, fill = category)) +
+    geom_histogram(bins = 30, color = "black", na.rm = TRUE) +
+    scale_fill_manual(values = reads_colour) +
+    scale_x_continuous(
+      breaks = seq(0, 6, 0.5),
+      limits = c(0, 6)
+    ) +
+    ylim(0, 50)+
+    facet_grid(facet_formula) +
+    theme_classic() +
+    theme(
+      plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+      axis.title.x = element_text(face = "bold.italic"),
+      legend.position = "bottom",
+      plot.caption = element_text(size = 10, face = "italic", hjust = 0)
+    ) +
+    labs(
+      title = title,
+      x = expression(log[10](Z~score + 1)),
+      y= "Count",
+      fill = "Category"
+    )
+  
+  # Optional: add red threshold line if NTC is available
+  if (!is.na(ntc_threshold)) {
+    plot <- plot +
+      geom_vline(xintercept = ntc_threshold, linetype = "dashed", color = "red", linewidth = 1) +
+      annotate(
+        "text",
+        x = ntc_threshold,
+        y = Inf,
+        label = paste0("z-score threshold = ", ntc_threshold),
+        vjust = -0.5,
+        hjust = 0,
+        angle = 90,
+        color = "red",
+        size = 4,
+        fontface = "italic"
+      ) +
+      labs(
+        caption = paste0("Red dashed line = z-score threshold from NTCs: ", ntc_threshold)
+      )
+  }
+  
+  return(plot)
+}
+
+# Run data set 
+
+plot_1 <- z_score_histo(z_score_esispa_blood_hist, "Z-score distribution: eSISPA \nfor blood samples")
+plot_2 <- z_score_histo(z_score_esispa_swab_hist, "Z-score distribution : eSISPA \nfor oral swab samples")
+plot_3 <- z_score_histo(z_score_sispa_blood_hist, "Z-score distribution : Standard SISPA \nfor blood samples")
+plot_4 <- z_score_histo(z_score_sispa_swab_hist, "Z-score distribution : Standard SISPA \nfor oral swab samples")
+
+# Display plots
+
+print(plot_1)
+print(plot_2)
+print(plot_3)
+print(plot_4)
+
+# save plots as pdf and png files
+
+ggsave(file.path(output_dir,"fig_5a_dist_zscore_esispa_blood_plot.pdf"), plot = plot_1, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5b_dist_zscore_esispa_swab_plot.pdf"), plot = plot_2, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5c_dist_zscore_sispa_blood_plot.pdf"), plot = plot_3, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5d_dist_zscore_sispa_swab_plot.pdf"), plot = plot_4, device = "pdf", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5a_dist_zscore_esispa_blood_plot.png"), plot = plot_1, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5b_dist_zscore_esispa_swab_plot.png"), plot = plot_2, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5c_dist_zscore_sispa_blood_plot.png"), plot = plot_3, device = "png", height = 8, width = 6)
+ggsave(file.path(output_dir,"fig_5d_dist__zscore_sispa_swab_plot.png"), plot = plot_4, device = "png", height = 8, width = 6)
+```
+
+
+

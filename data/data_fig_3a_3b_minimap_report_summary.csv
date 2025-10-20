@@ -1,0 +1,111 @@
+sample,total_reads,mapped_reads,fraction_total_reads,short_name_id,sample_type,reads_types,reads_taxa,protocol
+NTC_b_1,1,0,0.000,NTC_b_1,Blood samples,Host reads,,eSISPA
+NTC_b_2,3607,1247,0.346,NTC_b_2,Blood samples,Host reads,,eSISPA
+NTC_bi,38743,34627,0.894,NTC_bi,Blood samples,Host reads,,Standard SISPA
+NTC_s_1,14867,755,0.051,NTC_s_1,Oral swab samples,Host reads,,eSISPA
+NTC_s_2,5767,4150,0.720,NTC_s_2,Oral swab samples,Host reads,,eSISPA
+NTC_si,43993,12773,0.290,NTC_si,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_b_004_T,230424,227644,0.988,PAN004,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_004,587711,569618,0.969,PAN004,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_006_T,9655,9044,0.937,PAN006,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_006,419243,406664,0.970,PAN006,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_007_T,11157,9355,0.838,PAN007,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_007,478709,430613,0.900,PAN007,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_017_T,88854,87451,0.984,PAN017,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_017,8874,8611,0.970,PAN017,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_018_T,29760,29018,0.975,PAN018,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_018,143147,139829,0.977,PAN018,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_019_T,132253,130543,0.987,PAN019,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_019,377429,366585,0.971,PAN019,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_020_T,213864,210780,0.986,PAN020,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_020,313605,306233,0.976,PAN020,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_b_026_T,209353,206280,0.985,PAN026,Blood samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_026,355819,346056,0.973,PAN026,Blood samples,Host reads,,eSISPA
+RDC_INC_PAN_bi_004,397332,389828,0.981,PAN004,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_006,477533,458127,0.959,PAN006,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_007,792622,780973,0.985,PAN007,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_017,28838,28040,0.972,PAN017,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_018,57836,56496,0.977,PAN018,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_019,214024,210769,0.985,PAN019,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_020,97770,95765,0.979,PAN020,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_bi_026,29277,28062,0.958,PAN026,Blood samples,Host reads,,Standard SISPA
+RDC_INC_PAN_s_013_T,351338,226088,0.644,PAN013,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_013,562886,286150,0.508,PAN013,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_015_T,508208,471237,0.927,PAN015,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_015,459497,423478,0.922,PAN015,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_017_T,4688,3386,0.722,PAN017,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_017,563952,307721,0.546,PAN017,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_018_T,200246,121073,0.605,PAN018,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_018,130439,49267,0.378,PAN018,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_019_T,659994,584778,0.886,PAN019,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_019,22993,1685,0.073,PAN019,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_020_T,733923,679352,0.926,PAN020,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_020,4235,2546,0.601,PAN020,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_s_026_T,403755,148335,0.367,PAN026,Oral swab samples,Host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_026,313522,92843,0.296,PAN026,Oral swab samples,Host reads,,eSISPA
+RDC_INC_PAN_si_013,93231,68743,0.737,PAN013,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_015,99649,85462,0.858,PAN015,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_017,59030,34009,0.576,PAN017,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_018,233369,142698,0.611,PAN018,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_019,50034,35680,0.713,PAN019,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_020,259340,245058,0.945,PAN020,Oral swab samples,Host reads,,Standard SISPA
+RDC_INC_PAN_si_026,45533,24061,0.528,PAN026,Oral swab samples,Host reads,,Standard SISPA
+NTC_b_1,1,0,0.000,NTC_b_1,Blood samples,Host reads,,PtCl4 eSISPA
+NTC_b_2,3607,1247,0.346,NTC_b_2,Blood samples,Host reads,,PtCl4 eSISPA
+NTC_s_1,14867,755,0.051,NTC_s_1,Oral swab samples,Host reads,,PtCl4 eSISPA
+NTC_s_2,5767,4150,0.720,NTC_s_2,Oral swab samples,Host reads,,PtCl4 eSISPA
+NTC_b_1,1,1,1.000,NTC_b_1,Blood samples,Non-host reads,,eSISPA
+NTC_b_2,3607,2360,0.654,NTC_b_2,Blood samples,Non-host reads,,eSISPA
+NTC_bi,38743,4116,0.106,NTC_bi,Blood samples,Non-host reads,,Standard SISPA
+NTC_s_1,14867,14112,0.949,NTC_s_1,Oral swab samples,Non-host reads,,eSISPA
+NTC_s_2,5767,1617,0.280,NTC_s_2,Oral swab samples,Non-host reads,,eSISPA
+NTC_si,43993,31220,0.710,NTC_si,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_b_004_T,230424,2780,0.012,PAN004,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_004,587711,18093,0.031,PAN004,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_006_T,9655,611,0.063,PAN006,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_006,419243,12579,0.030,PAN006,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_007_T,11157,1802,0.162,PAN007,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_007,478709,48096,0.100,PAN007,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_017_T,88854,1403,0.016,PAN017,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_017,8874,263,0.030,PAN017,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_018_T,29760,742,0.025,PAN018,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_018,143147,3318,0.023,PAN018,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_019_T,132253,1710,0.013,PAN019,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_019,377429,10844,0.029,PAN019,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_020_T,213864,3084,0.014,PAN020,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_020,313605,7372,0.024,PAN020,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_b_026_T,209353,3073,0.015,PAN026,Blood samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_b_026,355819,9763,0.027,PAN026,Blood samples,Non-host reads,,eSISPA
+RDC_INC_PAN_bi_004,397332,7504,0.019,PAN004,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_006,477533,19406,0.041,PAN006,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_007,792622,11649,0.015,PAN007,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_017,28838,798,0.028,PAN017,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_018,57836,1340,0.023,PAN018,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_019,214024,3255,0.015,PAN019,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_020,97770,2005,0.021,PAN020,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_bi_026,29277,1215,0.042,PAN026,Blood samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_s_013_T,351338,125250,0.356,PAN013,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_013,562886,276736,0.492,PAN013,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_015_T,508208,36971,0.073,PAN015,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_015,459497,36019,0.078,PAN015,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_017_T,4688,1302,0.278,PAN017,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_017,563952,256231,0.454,PAN017,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_018_T,200246,79173,0.395,PAN018,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_018,130439,81172,0.622,PAN018,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_019_T,659994,75216,0.114,PAN019,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_019,22993,21308,0.927,PAN019,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_020_T,733923,54571,0.074,PAN020,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_020,4235,1689,0.399,PAN020,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_s_026_T,403755,255420,0.633,PAN026,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+RDC_INC_PAN_s_026,313522,220679,0.704,PAN026,Oral swab samples,Non-host reads,,eSISPA
+RDC_INC_PAN_si_013,93231,24488,0.263,PAN013,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_015,99649,14187,0.142,PAN015,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_017,59030,25021,0.424,PAN017,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_018,233369,90671,0.389,PAN018,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_019,50034,14354,0.287,PAN019,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_020,259340,14282,0.055,PAN020,Oral swab samples,Non-host reads,,Standard SISPA
+RDC_INC_PAN_si_026,45533,21472,0.472,PAN026,Oral swab samples,Non-host reads,,Standard SISPA
+NTC_b_1,1,1,1.000,NTC_b_1,Blood samples,Non-host reads,,PtCl4 eSISPA
+NTC_b_2,3607,2360,0.654,NTC_b_2,Blood samples,Non-host reads,,PtCl4 eSISPA
+NTC_s_1,14867,14112,0.949,NTC_s_1,Oral swab samples,Non-host reads,,PtCl4 eSISPA
+NTC_s_2,5767,1617,0.280,NTC_s_2,Oral swab samples,Non-host reads,,PtCl4 eSISPA

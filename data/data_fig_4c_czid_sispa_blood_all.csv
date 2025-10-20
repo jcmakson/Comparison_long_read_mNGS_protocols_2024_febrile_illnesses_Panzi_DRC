@@ -1,0 +1,464 @@
+tax_id,tax_level,genus_tax_id,name,common_name,category,is_phage,nt_bpm,nt_base_count,nt_count,nt_contigs,nt_contig_b,nt_percent_identity,nt_alignment_length,nt_e_value,nr_bpm,nr_base_count,nr_count,nr_contigs,nr_contig_b,nr_percent_identity,nr_alignment_length,nr_e_value,species_tax_ids,known_pathogen,sample_ID,short_name_id,protocol
+469322,2,469322,Steroidobacter,,bacteria,FALSE,15.2419,716,1,,,90.957,575,10^-307.653,,,,,,,,,[465721],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+366614,2,366614,Haematobacter,,bacteria,FALSE,17.4345,819,1,,,94.9771,657,10^-146.283,,,,,,,,,[195105],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+287191,2,287191,Sesia,,eukaryota,FALSE,11.4953,540,1,,,80.435,322,10^-121.064,,,,,,,,,[748215],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+91737,2,91737,Aricia,,eukaryota,FALSE,9.5794,450,1,,,81.91,199,10^-73.9263,,,,,,,,,[91739],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+83677,2,83677,Thermobifida,,bacteria,FALSE,12.5384,589,1,,,92.925,424,10^-236.224,,,,,,,,,[53522],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+60957,2,60957,Piscicola,,eukaryota,FALSE,30.2283,1420,2,,,97.382,560,10^-307.653,,,,,,,,,[60958],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+55709,2,55709,Cerastoderma,,eukaryota,FALSE,15.9231,748,1,,,82.927,164,10^-60.9728,,,,,,,,,[55710],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+52939,2,52939,Tridacna,,eukaryota,FALSE,9.21751,433,1,,,98.947,285,10^-178.071,,,,,,,,,[80833],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+43668,2,43668,Brachybacterium,,bacteria,FALSE,11.8997,559,1,,,92.248,387,10^-210.875,,,,,,,,,[1862056],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,1776.66,83460,123,,,95.4441,493.618,10^-229.303,,,,,,,,,"[880534, 5858, 5854, 5833]",2,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,107.353,5043,9,,,96.6573,377.778,10^-190.11,,,,,,,,,[5763],1,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+5052,2,5052,Aspergillus,,eukaryota,FALSE,11.5591,543,1,,,94.118,391,10^-223.221,,,,,,,,,[5061],1,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+1839,2,1839,Nocardioides,,bacteria,FALSE,17.8815,840,1,,,97.065,477,10^-294.498,,,,,,,,,[252230],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+1386,2,1386,Bacillus,,bacteria,FALSE,15.029,706,1,,,92.924,537,10^-302.681,,,,,,,,,[630209],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+1298,2,1298,Deinococcus,,bacteria,FALSE,16.5191,776,1,,,96.405,612,10^-307.653,,,,,,,,,[2080419],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,30.9521,1454,1,,,94.8596,1245,10^-307.653,,,,,,,,,[1270],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,12.07,567,1,,,91.858,393,10^-212.24,,,,,,,,,[2079596],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,11.9849,563,1,,,96.6463,328,10^-33.1221,,,,,,,,,[2983246],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,26.8862,1263,2,,,93.1595,475,10^-266.792,,,,,,,,,[77133],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,14.1136,663,1,,,85.714,497,10^-229.979,,,,,,,,,[432261],0,RDC_INC_PAN_bi_018_775876_taxon_report,PAN018,Standard SISPA
+2714592,2,2714592,Crateriforma,,bacteria,FALSE,70.4382,1711,3,,,85.1808,332.333,10^-61.2163,,,,,,,,,[2527996],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+1920762,2,1920762,Litunavirus,,viruses,TRUE,9495.9,230663,424,,,98.1335,67.3538,10^-25.728,,,,,,,,,[3058783],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+556257,2,556257,Pseudolabrys,,bacteria,FALSE,36.5982,889,1,,,88.808,411,10^-205.359,,,,,,,,,[2562284],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+469322,2,469322,Steroidobacter,,bacteria,FALSE,31.4111,763,1,,,91.438,619,10^-307.653,,,,,,,,,[465721],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+295994,2,295994,Anaspis,,eukaryota,FALSE,19.7194,479,1,,,93.023,129,10^-63.1356,,,,,,,,,[295995],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+198633,2,198633,Eristalis,,eukaryota,FALSE,19.9664,485,1,,,83.105,219,10^-86.2361,,,,,,,,,[1572519],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+104456,2,104456,Ecliptopera,,eukaryota,FALSE,16.8788,410,1,,,92.5,120,10^-56.9914,,,,,,,,,[104457],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+67575,2,67575,Rheinheimera,,bacteria,FALSE,41.703,1013,1,,,93.779,868,10^-307.653,,,,,,,,,[1774958],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+41125,2,41125,Chrysolina,,eukaryota,FALSE,26.2239,637,1,,,81.095,201,10^-72.5496,,,,,,,,,[1587174],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+32008,2,32008,Burkholderia,,bacteria,FALSE,32.3579,786,1,,,91.667,612,10^-307.653,,,,,,,,,[57975],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+6397,2,6397,Lumbricus,,eukaryota,FALSE,23.054,560,1,,,80.609,361,10^-138.169,,,,,,,,,[35632],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,2695.38,65473,92,,,95.2795,526.891,10^-252.138,,,,,,,,,"[880534, 5833]",1,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,170.517,4142,7,,,97.1557,427,10^-243.754,,,,,,,,,[5763],1,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+5498,2,5498,Cladosporium,,eukaryota,FALSE,40.0152,972,2,,,93.191,339.5,10^-187.259,,,,,,,,,"[2152652, 1590399]",0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+1839,2,1839,Nocardioides,,bacteria,FALSE,30.2995,736,1,,,86.809,561,10^-269.725,,,,,,,,,[433659],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+1485,2,1485,Clostridium,,bacteria,FALSE,762.182,18514,25,,,98.895,65.68,10^-25.0749,,,,,,,,,[1502],1,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,26.5944,646,1,,,90.303,495,10^-260.173,,,,,,,,,[1270],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+561,2,561,Escherichia,,bacteria,FALSE,32.8931,799,1,,,95.556,630,10^-307.653,,,,,,,,,[562],1,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,42.8969,1042,1,,,89.837,492,10^-255.372,,,,,,,,,[3020716],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+379,2,379,Rhizobium,,bacteria,FALSE,30.67,745,1,,,95.897,585,10^-307.653,,,,,,,,,[2775403],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+10,2,10,Cellvibrio,,bacteria,FALSE,40.3033,979,1,,,92.857,812,10^-307.653,,,,,,,,,[1945512],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,62.9456,1529,2,,,95.3845,604,10^-270.573,,,,,,,,,[77133],0,RDC_INC_PAN_bi_026_775879_taxon_report,PAN026,Standard SISPA
+2901164,2,2901164,Stutzerimonas,,bacteria,FALSE,1.60919,361,1,,,97.391,230,10^-136.306,,,,,,,,,[74829],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+2803850,2,2803850,Mammaliicoccus,,bacteria,FALSE,2.61661,587,1,,,99.259,540,10^-307.653,,,,,,,,,[1296],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1912216,2,1912216,Cutibacterium,,bacteria,FALSE,54.142,12146,22,,,96.7997,488.409,10^-261.203,,,,,,,,,[1747],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1847725,2,1847725,Lawsonella,,bacteria,FALSE,1.92568,432,1,,,85.185,405,10^-182.035,,,,,,,,,[1528099],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1759396,2,1759396,Marivivens,,bacteria,FALSE,3.38777,760,1,,,90.535,729,10^-307.653,,,,,,,,,[3051171],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1549734,2,1549734,Sonnenemertes,,eukaryota,FALSE,0.48142,108,1,,,96.923,65,10^-29.1241,,,,,,,,,[1484664],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1410155,2,1410155,Cymatodera,,eukaryota,FALSE,0.534912,120,1,,,93.258,89,10^-39.9665,,,,,,,,,[2448391],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1175193,2,1175193,Felimida,,eukaryota,FALSE,0.494793,111,1,,,97.143,70,10^-32.5228,,,,,,,,,[983170],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1085622,2,1085622,Propioniciclava,,bacteria,FALSE,1.57353,353,1,,,94.654,318,10^-181.454,,,,,,,,,[2760308],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+689302,2,689302,Agrochola,,eukaryota,FALSE,2.25554,506,1,,,82.468,308,10^-123.828,,,,,,,,,[987872],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+687333,2,687333,Gammatorquevirus,,viruses,FALSE,17.9106,4018,6,,,90.3468,585.167,10^-256.847,,,,,,,,,"[3048386, 3048385, 3048380, 2809423]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+687332,2,687332,Betatorquevirus,,viruses,FALSE,758.38,170132,284,,,91.5928,536.775,10^-222.345,,,,,,,,,"[2809199, 93678]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+687331,2,687331,Alphatorquevirus,,viruses,FALSE,4.51555,1013,2,,,91.2918,427.5,10^-146.367,,,,,,,,,"[3048428, 687347]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+501783,2,501783,Cloacibacterium,,bacteria,FALSE,2.59432,582,1,,,93.199,397,10^-221.842,,,,,,,,,[2004710],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+478394,2,478394,Diadumene,,eukaryota,FALSE,1.51558,340,1,,,83.026,271,10^-109.474,,,,,,,,,[1789172],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+401469,2,401469,Undibacterium,,bacteria,FALSE,5.01925,1126,1,,,92.571,525,10^-293.084,,,,,,,,,[401471],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+389762,2,389762,Megahexura,,eukaryota,FALSE,0.485878,109,1,,,96.491,57,10^-23.6916,,,,,,,,,[389833],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+347753,2,347753,Oegoconia,,eukaryota,FALSE,0.583945,131,1,,,90.291,103,10^-44.0202,,,,,,,,,[347754],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+341966,2,341966,Aphanisticus,,eukaryota,FALSE,0.521539,117,1,,,96.552,58,10^-24.3702,,,,,,,,,[1581348],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+222002,2,222002,Lepidonotus,,eukaryota,FALSE,0.468048,105,1,,,92.857,56,10^-20.2684,,,,,,,,,[222003],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+209961,2,209961,Parasitylenchus,,eukaryota,FALSE,0.44576,100,1,,,100,45,10^-18.3048,,,,,,,,,[1368471],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+197911,2,197911,Alphainfluenzavirus,,viruses,FALSE,1.24367,279,2,,,98.077,48.5,10^-19.3027,,,,,,,,,[2955291],1,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+177920,2,177920,Psychomyia,,eukaryota,FALSE,0.46359,104,1,,,90.625,64,10^-22.9551,,,,,,,,,[177921],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+165779,2,165779,Anaerococcus,,bacteria,FALSE,3.50813,787,1,,,86.5112,771,10^-131.806,,,,,,,,,[3036300],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+115842,2,115842,Microphthalmus,,eukaryota,FALSE,0.508166,114,1,,,100,51,10^-22.3675,,,,,,,,,[3040556],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+112291,2,112291,Tenthredo,,eukaryota,FALSE,0.619606,139,1,,,85.263,95,10^-33.0764,,,,,,,,,[1385102],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+79498,2,79498,Lacanobia,,eukaryota,FALSE,1.56016,350,1,,,84.858,317,10^-138.226,,,,,,,,,[79499],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+74860,2,74860,Phascolion,,eukaryota,FALSE,0.739961,166,1,,,81.667,120,10^-39.1506,,,,,,,,,[360539],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+63265,2,63265,Sporisorium,,eukaryota,FALSE,1.89894,426,1,,,82.278,395,10^-161.46,,,,,,,,,[49012],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+55193,2,55193,Malassezia,,eukaryota,FALSE,17.4827,3922,6,,,94.5411,630.333,10^-205.689,,,,,,,,,"[76775, 76773]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+46580,2,46580,Spirometra,,eukaryota,FALSE,1.47546,331,1,,,83.713,307,10^-114.909,,,,,,,,,[99802],1,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+41275,2,41275,Brevundimonas,,bacteria,FALSE,9.21385,2067,3,,,96.882,474.333,10^-248.657,,,,,,,,,"[172043, 41276, 293]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+41098,2,41098,Cantharis,,eukaryota,FALSE,0.561657,126,1,,,98.276,58,10^-25.7426,,,,,,,,,[195172],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+41091,2,41091,Lagria,,eukaryota,FALSE,0.46359,104,1,,,94.253,87,10^-39.9764,,,,,,,,,[296003],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+41013,2,41013,Tinea,,eukaryota,FALSE,1.23475,277,1,,,83.051,236,10^-93.7517,,,,,,,,,[1101063],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+37842,2,37842,Sympodiomycopsis,,eukaryota,FALSE,1.55124,348,1,,,96.569,204,10^-117.145,,,,,,,,,[574677],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+6705,2,6705,Homarus,,eukaryota,FALSE,0.517081,116,1,,,97.183,71,10^-33.2028,,,,,,,,,[6706],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+6643,2,6643,Octopus,,eukaryota,FALSE,7.16336,1607,3,,,93.9463,503.333,10^-246.637,,,,,,,,,[6645],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+6343,2,6343,Arenicola,,eukaryota,FALSE,0.490336,110,1,,,94.595,74,10^-32.4987,,,,,,,,,[2589645],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+6181,2,6181,Schistosoma,,eukaryota,FALSE,2.38927,536,1,,,96.04,505,10^-305.453,,,,,,,,,[48269],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,7276.72,1632432,3300,,,97.0012,444.432,10^-247.119,,,,,,,,,"[880535, 880534, 720590, 111598, 5860, 5858, 5855, 5854, 5833, 5827, 5825]",3,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,188.583,42306,101,,,94.8666,373.634,10^-197.115,,,,,,,,,[5763],1,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+4575,2,4575,Zea,,eukaryota,FALSE,3.54379,795,1,,,100,56,10^-25.7579,,,,,,,,,[4577],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+4512,2,4512,Hordeum,,eukaryota,FALSE,0.583945,131,1,,,91.25,80,10^-32.4648,,,,,,,,,[4513],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+3817,2,3817,Arachis,,eukaryota,FALSE,0.476963,107,1,,,100,43,10^-16.9522,,,,,,,,,[217475],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+3633,2,3633,Gossypium,,eukaryota,FALSE,1.00742,226,1,,,96.41,195,10^-110.989,,,,,,,,,[3635],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+3459,2,3459,Coriaria,,eukaryota,FALSE,0.632979,142,1,,,89.815,108,10^-46.0582,,,,,,,,,[79760],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1716,2,1716,Corynebacterium,,bacteria,FALSE,11.7324,2632,4,,,95.9455,632.75,10^-220.857,,,,,,,,,"[43990, 38304, 38284]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1301,2,1301,Streptococcus,,bacteria,FALSE,3.56162,799,1,,,97.95,683,10^-307.653,,,,,,,,,[28037],1,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,21.5168,4827,6,,,97.0015,584.833,10^-254.836,,,,,,,,,"[566027, 1270]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1203,2,1203,Scytonema,,bacteria,FALSE,1.83653,412,1,,,81.361,338,10^-132.022,,,,,,,,,[1137095],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,2.24663,504,1,,,98.684,456,10^-291.087,,,,,,,,,[43263],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+283,2,283,Comamonas,,bacteria,FALSE,2.32241,521,1,,,91.417,501,10^-271.147,,,,,,,,,[225991],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+237,2,237,Flavobacterium,,bacteria,FALSE,4.43085,994,2,,,89.0175,430,10^-190.11,,,,,,,,,"[2830782, 1751056]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,3.54379,795,2,,,92.271,354,10^-184.701,,,,,,,,,"[100272, 77133]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+-200118520,2,-200118520,non-genus-specific reads in family Chthoniidae,,eukaryota,FALSE,0.570572,128,1,,,92.857,84,10^-36.5607,,,,,,,,,[1712357],0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,1156.3,259400,434,,,92.0261,538.855,10^-234.653,,,,,,,,,"[2055263, 432261, 393049, 68887]",0,RDC_INC_PAN_bi_004_775872_taxon_report,PAN004,Standard SISPA
+1912216,2,1912216,Cutibacterium,,bacteria,FALSE,55.2612,1283,3,,,95.0253,273.667,10^-161.206,,,,,,,,,[1747],0,NTCbi,NTCbi,Standard SISPA
+121227,2,121227,Pthirus,,eukaryota,FALSE,11.3279,263,1,,,92.398,171,10^-86.3435,,,,,,,,,[121228],1,NTCbi,NTCbi,Standard SISPA
+80865,2,80865,Delftia,,bacteria,FALSE,19.3393,449,2,,,94.7175,179.5,10^-96.9583,,,,,,,,,[80866],0,NTCbi,NTCbi,Standard SISPA
+80764,2,80764,Aphis,,eukaryota,FALSE,385.321,8946,32,,,96.7932,232.438,10^-136.002,,,,,,,,,[80765],0,NTCbi,NTCbi,Standard SISPA
+60940,2,60940,Branchellion,,eukaryota,FALSE,10.1219,235,1,,,85.437,206,10^-86.9489,,,,,,,,,[375517],0,NTCbi,NTCbi,Standard SISPA
+44249,2,44249,Paenibacillus,,bacteria,FALSE,335.099,7780,35,,,95.7728,190.943,10^-106.725,,,,,,,,,[1536771],0,NTCbi,NTCbi,Standard SISPA
+33986,2,33986,Exiguobacterium,,bacteria,FALSE,65.7708,1527,8,,,95.487,148.75,10^-79.8857,,,,,,,,,[1428684],0,NTCbi,NTCbi,Standard SISPA
+28453,2,28453,Sphingobacterium,,bacteria,FALSE,2125.9,49357,151,,,88.6609,286.682,10^-138.724,,,,,,,,,[459529],0,NTCbi,NTCbi,Standard SISPA
+12059,2,12059,Enterovirus,,viruses,FALSE,6.50385,151,1,,,99.338,151,10^-89.1423,,,,,,,,,[138950],1,NTCbi,NTCbi,Standard SISPA
+6397,2,6397,Lumbricus,,eukaryota,FALSE,11.0695,257,1,,,80.357,168,10^-56.8453,,,,,,,,,[35632],0,NTCbi,NTCbi,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,81.2336,1886,4,,,94.4225,320.75,10^-179.64,,,,,,,,,[5833],1,NTCbi,NTCbi,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,1140.93,26489,138,,,98.753,125.768,10^-71.1061,,,,,,,,,[5763],1,NTCbi,NTCbi,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,24507.4,568988,895,,,96.8857,597.974,10^-306.138,,,,,,,,,"[2995171, 1811305, 1179670, 566027, 1270]",0,NTCbi,NTCbi,Standard SISPA
+724,2,724,Haemophilus,,bacteria,FALSE,16.3673,380,1,,,93.842,341,10^-191.716,,,,,,,,,[729],1,NTCbi,NTCbi,Standard SISPA
+662,2,662,Vibrio,,bacteria,FALSE,9.0451,210,1,,,96.721,183,10^-104.155,,,,,,,,,[663],1,NTCbi,NTCbi,Standard SISPA
+561,2,561,Escherichia,,bacteria,FALSE,31.2702,726,1,,,98.24,682,10^-307.653,,,,,,,,,[562],1,NTCbi,NTCbi,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,15.6351,363,2,,,98.889,135,10^-77.5258,,,,,,,,,[202956],0,NTCbi,NTCbi,Standard SISPA
+374,2,374,Bradyrhizobium,,bacteria,FALSE,13808.4,320590,299,,,96.4859,1037.45,10^-307.653,,,,,,,,,[2715960],0,NTCbi,NTCbi,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,15962.1,370592,635,,,97.4167,534.254,10^-276.335,,,,,,,,,"[2976884, 2018067, 75588, 294, 287]",2,NTCbi,NTCbi,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,23.1727,538,1,,,93.795,419,10^-238.287,,,,,,,,,[77133],0,NTCbi,NTCbi,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,81.3628,1889,2,,,93.342,907.5,10^-192.097,,,,,,,,,"[432261, 68887]",0,NTCbi,NTCbi,Standard SISPA
+2979332,2,2979332,Prescottella,,bacteria,FALSE,947.92,21184,37,,,95.2904,67.7568,10^-29.2562,,,,,,,,,[1323361],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+1920774,2,1920774,Drulisvirus,,viruses,TRUE,2162.18,48320,100,,,98.6923,67.64,10^-25.3308,,,,,,,,,[3044024],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+186846,2,186846,Salasvirus,,viruses,TRUE,34.4552,770,1,,,88.622,624,10^-307.653,,,,,,,,,[2915344],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+33882,2,33882,Microbacterium,,bacteria,FALSE,112.673,2518,1,,,92.38,2441,10^-307.653,,,,,,,,,[2086576],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+6726,2,6726,Procambarus,,eukaryota,FALSE,28.1906,630,1,,,83.085,402,10^-169.001,,,,,,,,,[6728],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,2154.48,48148,67,,,95.541,530.433,10^-255.377,,,,,,,,,"[880534, 5833]",1,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,167.712,3748,6,,,94.0842,462.667,10^-230.066,,,,,,,,,[5763],1,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+4930,2,4930,Saccharomyces,,eukaryota,FALSE,370.237,8274,17,,,96.1744,85.4706,10^-28.386,,,,,,,,,[4932],1,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+1177,2,1177,Nostoc,,bacteria,FALSE,40.1828,898,3,,,100,65.6667,10^-20.2316,,,,,,,,,[2576903],0,RDC_INC_PAN_bi_017_775875_taxon_report,PAN017,Standard SISPA
+2912996,2,2912996,Changpingibacter,,bacteria,FALSE,1.24164,485,1,,,82.043,323,10^-128.611,,,,,,,,,[2758440],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+2807511,2,2807511,Humisphaera,,bacteria,FALSE,13.1742,5146,10,,,90.2954,468.9,10^-212.692,,,,,,,,,[2807512],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+2803850,2,2803850,Mammaliicoccus,,bacteria,FALSE,6.28501,2455,4,,,97.8738,564.5,10^-280.261,,,,,,,,,[1296],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+2675232,2,2675232,Neobacillus,,bacteria,FALSE,1.38245,540,2,,,91.3445,190,10^-94.532,,,,,,,,,"[3047873, 1215031]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1982251,2,1982251,Pahexavirus,,viruses,TRUE,1.0394,406,1,,,92.157,357,10^-193.069,,,,,,,,,[1982280],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1912216,2,1912216,Cutibacterium,,bacteria,FALSE,227.459,88848,131,,,96.9585,586.176,10^-274.604,,,,,,,,,"[2559073, 1747]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1822464,2,1822464,Paraburkholderia,,bacteria,FALSE,2.26824,886,2,,,95.6655,415.5,10^-246.868,,,,,,,,,[2861782],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1307799,2,1307799,Pegivirus,,viruses,FALSE,10.3479,4042,5,,,89.1874,669.4,10^-293.628,,,,,,,,,[3052608],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1046314,2,1046314,Bimastos,,eukaryota,FALSE,0.261129,102,1,,,98.148,54,10^-23.0289,,,,,,,,,[320977],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+687332,2,687332,Betatorquevirus,,viruses,FALSE,150.364,58734,106,,,90.8558,502.566,10^-227.458,,,,,,,,,"[3050361, 93678]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+665874,2,665874,Limnohabitans,,bacteria,FALSE,1.02147,399,1,,,93.617,188,10^-99.3399,,,,,,,,,[1835771],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+572808,2,572808,Agriphila,,eukaryota,FALSE,1.56165,610,2,,,82.8705,266.5,10^-106.395,,,,,,,,,[572809],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+501783,2,501783,Cloacibacterium,,bacteria,FALSE,10.2967,4022,5,,,93.2174,785.8,10^-228.159,,,,,,,,,"[2004710, 237258]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+337004,2,337004,Microcella,,bacteria,FALSE,1.04452,408,1,,,97.043,372,10^-226.674,,,,,,,,,[279828],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+334624,2,334624,Oppiella,,eukaryota,FALSE,1.78694,698,2,,,94.134,308,10^-171.177,,,,,,,,,[334625],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+320234,2,320234,Leptophobia,,eukaryota,FALSE,0.972833,380,1,,,85.345,348,10^-155.34,,,,,,,,,[320235],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+318808,2,318808,Acholoe,,eukaryota,FALSE,1.07012,418,1,,,92.835,321,10^-175.274,,,,,,,,,[2922911],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+271773,2,271773,Alentia,,eukaryota,FALSE,0.637462,249,1,,,81.633,196,10^-71.8744,,,,,,,,,[271774],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+271028,2,271028,Anisus,,eukaryota,FALSE,1.85862,726,2,,,83.401,329.5,10^-137.184,,,,,,,,,[271030],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+247414,2,247414,Ophonus,,eukaryota,FALSE,1.39781,546,1,,,80.444,496,10^-193.612,,,,,,,,,[247415],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+212742,2,212742,Morococcus,,bacteria,FALSE,0.939552,367,1,,,94.062,320,10^-180.079,,,,,,,,,[1056807],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+189978,2,189978,Bibio,,eukaryota,FALSE,0.350732,137,1,,,96.875,96,10^-48.8541,,,,,,,,,[189979],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+168630,2,168630,Chilo,,eukaryota,FALSE,4.65936,1820,4,,,84.6829,278,10^-51.5916,,,,,,,,,[168631],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+162289,2,162289,Peptoniphilus,,bacteria,FALSE,1.03428,404,1,,,84,375,10^-161.483,,,,,,,,,[54005],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+150247,2,150247,Anoxybacillus,,bacteria,FALSE,1.56165,610,1,,,83.172,309,10^-127.258,,,,,,,,,[294699],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+150022,2,150022,Finegoldia,,bacteria,FALSE,12.0913,4723,10,,,96.3415,438.1,10^-265.102,,,,,,,,,[1260],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+144423,2,144423,Oxytorus,,eukaryota,FALSE,0.862749,337,1,,,87.324,284,10^-132.098,,,,,,,,,[495374],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+132116,2,132116,Megachile,,eukaryota,FALSE,0.775706,303,1,,,83.471,121,10^-42.5779,,,,,,,,,[481575],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+121222,2,121222,Pediculus,,eukaryota,FALSE,2.33736,913,1,,,81.287,342,10^-133.389,,,,,,,,,[121225],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+119997,2,119997,Chionographis,,eukaryota,FALSE,0.663062,259,1,,,84.444,225,10^-93.0862,,,,,,,,,[119999],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+95189,2,95189,Apamea,,eukaryota,FALSE,0.412174,161,1,,,80,120,10^-36.4058,,,,,,,,,[689061],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+93681,2,93681,Roseateles,,bacteria,FALSE,7.81338,3052,5,,,93.9012,560.8,10^-298.971,,,,,,,,,[452440],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+92793,2,92793,Aquabacterium,,bacteria,FALSE,4.55695,1780,4,,,94.8428,406,10^-236.586,,,,,,,,,"[2898431, 1296669]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+86795,2,86795,Marmoricola,,bacteria,FALSE,0.837148,327,1,,,98.233,283,10^-173.956,,,,,,,,,[1298863],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+83618,2,83618,Pseudoxanthomonas,,bacteria,FALSE,4.90769,1917,4,,,98.4778,354.75,10^-222.067,,,,,,,,,"[1811321, 128785]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+79820,2,79820,Lophotrichus,,eukaryota,FALSE,0.957472,374,1,,,97.554,327,10^-199.969,,,,,,,,,[2075132],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+79498,2,79498,Lacanobia,,eukaryota,FALSE,1.8663,729,1,,,81.731,104,10^-32.3509,,,,,,,,,[987426],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+60957,2,60957,Piscicola,,eukaryota,FALSE,18.8371,7358,14,,,96.6147,492.5,10^-251.847,,,,,,,,,[60958],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+60940,2,60940,Branchellion,,eukaryota,FALSE,1.13156,442,1,,,93.932,412,10^-234.864,,,,,,,,,[375517],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+60834,2,60834,Nebria,,eukaryota,FALSE,1.44645,565,1,,,84.103,585,10^-260.1,,,,,,,,,[110024],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+56587,2,56587,Furcula,,eukaryota,FALSE,1.50789,589,1,,,81.866,568,10^-234.724,,,,,,,,,[987943],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+55709,2,55709,Cerastoderma,,eukaryota,FALSE,1.56165,610,1,,,96.643,566,10^-307.653,,,,,,,,,[55710],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+55193,2,55193,Malassezia,,eukaryota,FALSE,122.096,47692,87,,,95.9997,506.851,10^-255.563,,,,,,,,,"[1514897, 76775, 76773]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+53457,2,53457,Janibacter,,bacteria,FALSE,1.01635,397,1,,,96.176,340,10^-202.01,,,,,,,,,[2806261],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+52939,2,52939,Tridacna,,eukaryota,FALSE,0.678423,265,1,,,84,225,10^-91.7138,,,,,,,,,[80833],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+47766,2,47766,Agrotis,,eukaryota,FALSE,0.437775,171,1,,,84.298,121,10^-43.9503,,,,,,,,,[997525],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+46913,2,46913,Devosia,,bacteria,FALSE,1.13924,445,1,,,88.36,378,10^-185.496,,,,,,,,,[2976680],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+46580,2,46580,Spirometra,,eukaryota,FALSE,5.81652,2272,5,,,88.0966,299.4,10^-101.303,,,,,,,,,[99802],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+39725,2,39725,Circovirus,,viruses,FALSE,0.942112,368,1,,,98.442,321,10^-199.977,,,,,,,,,[1964372],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+33465,2,33465,Yponomeuta,European small ermine moth,eukaryota,FALSE,0.783387,306,1,,,86.316,285,10^-128.665,,,,,,,,,[2567736],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+32207,2,32207,Rothia,,bacteria,FALSE,5.95732,2327,3,,,95.438,730.333,10^-289.569,,,,,,,,,"[1812678, 43675]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+29048,2,29048,Ophion,,eukaryota,FALSE,1.27748,499,1,,,81.25,96,10^-28.2685,,,,,,,,,[495356],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+13687,2,13687,Sphingomonas,,bacteria,FALSE,3.59948,1406,2,,,93.6967,664.5,10^-241.281,,,,,,,,,"[2714943, 1176646]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+12059,2,12059,Enterovirus,,viruses,FALSE,0.540178,211,1,,,96.729,214,10^-123.986,,,,,,,,,[138950],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+7440,2,7440,Dolichovespula,,eukaryota,FALSE,0.721944,282,1,,,82.213,253,10^-98.5247,,,,,,,,,[881891],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6643,2,6643,Octopus,,eukaryota,FALSE,5.7858,2260,6,,,87.4277,320.167,10^-136.606,,,,,,,,,[6645],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6603,2,6603,Mya,,eukaryota,FALSE,1.10852,433,1,,,82.258,434,10^-178.574,,,,,,,,,[6604],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6525,2,6525,Biomphalaria,,eukaryota,FALSE,3.01322,1177,1,,,84.553,1230,10^-307.653,,,,,,,,,[6526],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6397,2,6397,Lumbricus,,eukaryota,FALSE,0.573459,224,1,,,84.293,191,10^-76.6889,,,,,,,,,[35632],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6288,2,6288,Haemonchus,,eukaryota,FALSE,0.942112,368,1,,,85.044,341,10^-150.545,,,,,,,,,[6289],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6223,2,6223,Lineus,,eukaryota,FALSE,0.363532,142,1,,,89.344,122,10^-52.8671,,,,,,,,,[88925],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6215,2,6215,Hymenolepis,,eukaryota,FALSE,0.673303,263,1,,,96.889,225,10^-131.513,,,,,,,,,[85433],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+6115,2,6115,Metridium,,eukaryota,FALSE,1.51813,593,2,,,84.069,229.5,10^-95.4971,,,,,,,,,[6116],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,20.2196,7898,14,,,94.8006,486.857,10^-220.155,,,,,,,,,"[36330, 5858, 5833]",3,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+5810,2,5810,Toxoplasma,,eukaryota,FALSE,1.48741,581,2,,,86.7865,252.5,10^-113.965,,,,,,,,,[5811],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,430.553,168179,428,,,93.9938,346.813,10^-187.142,,,,,,,,,[5763],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+5097,2,5097,Monascus,,eukaryota,FALSE,3.78125,1477,3,,,81.9153,178.333,10^-64.8252,,,,,,,,,[5098],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+5052,2,5052,Aspergillus,,eukaryota,FALSE,1.01123,395,1,,,98.788,330,10^-207.513,,,,,,,,,[1915367],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+4564,2,4564,Triticum,,eukaryota,FALSE,0.714264,279,1,,,96.957,230,10^-134.934,,,,,,,,,[4571],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+4512,2,4512,Hordeum,,eukaryota,FALSE,4.30095,1680,2,,,88.9375,795.5,10^-307.653,,,,,,,,,[4513],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+3913,2,3913,Vigna,,eukaryota,FALSE,0.87811,343,1,,,93.836,292,10^-162.278,,,,,,,,,[3914],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+3633,2,3633,Gossypium,,eukaryota,FALSE,2.10183,821,3,,,88.9707,240,10^-113.422,,,,,,,,,[3635],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+2013,2,2013,Nocardiopsis,,bacteria,FALSE,1.6487,644,2,,,93.3675,292.5,10^-160.562,,,,,,,,,[2831969],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1716,2,1716,Corynebacterium,,bacteria,FALSE,32.3928,12653,18,,,96.9044,667.667,10^-292.452,,,,,,,,,"[1852390, 169292, 161899, 43769, 38284, 1725]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1696,2,1696,Brevibacterium,,bacteria,FALSE,7.59322,2966,5,,,97.9013,549.8,10^-257.512,,,,,,,,,"[1850290, 427574, 199591]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1569,2,1569,Sporosarcina,,bacteria,FALSE,0.796187,311,1,,,89.219,269,10^-131.435,,,,,,,,,[633404],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1372,2,1372,Planococcus,,bacteria,FALSE,2.25032,879,2,,,95.807,405,10^-241.047,,,,,,,,,"[1598147, 1374]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1301,2,1301,Streptococcus,,bacteria,FALSE,23.3813,9133,16,,,96.0027,482.375,10^-268.938,,,,,,,,,"[1234680, 712633, 28037, 1313, 1308, 1303]",3,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1279,2,1279,Staphylococcus,,bacteria,FALSE,24.0879,9409,17,,,96.9356,477.824,10^-259.494,,,,,,,,,"[1290, 1282]",1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,113.542,44351,69,,,96.4466,562.029,10^-279.281,,,,,,,,,"[566027, 1271, 1270]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+1177,2,1177,Nostoc,,bacteria,FALSE,1.33893,523,1,,,89.918,486,10^-252.633,,,,,,,,,[1973475],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+838,2,838,Prevotella,,bacteria,FALSE,1.08292,423,1,,,97.965,344,10^-212.984,,,,,,,,,[28131],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+836,2,836,Porphyromonas,,bacteria,FALSE,1.95079,762,1,,,89.55,756,10^-307.653,,,,,,,,,[28124],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+620,2,620,Shigella,,bacteria,FALSE,2.83658,1108,1,,,97.256,656,10^-307.653,,,,,,,,,[621],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+561,2,561,Escherichia,,bacteria,FALSE,65.6995,25663,40,,,96.9004,540.175,10^-266.329,,,,,,,,,[562],1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+482,2,482,Neisseria,,bacteria,FALSE,33.788,13198,19,,,97.0378,612.421,10^-267.235,,,,,,,,,"[289001, 33053, 28449, 490, 488]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+475,2,475,Moraxella,,bacteria,FALSE,15.8034,6173,12,,,96.6907,474.083,10^-277.753,,,,,,,,,[34062],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,31.5684,12331,21,,,96.9222,533.286,10^-279.734,,,,,,,,,"[1365173, 979639, 756892, 108981, 40215, 29430, 470]",1,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+374,2,374,Bradyrhizobium,,bacteria,FALSE,0.870429,340,1,,,85.312,320,10^-141.652,,,,,,,,,[2170627],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+338,2,338,Xanthomonas,,bacteria,FALSE,2.06087,805,2,,,97.531,364,10^-223.939,,,,,,,,,[346],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,6.34133,2477,5,,,97.172,431.4,10^-265.177,,,,,,,,,"[2821559, 47880, 303, 294]",2,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+283,2,283,Comamonas,,bacteria,FALSE,0.824348,322,1,,,98.905,274,10^-170.54,,,,,,,,,[225991],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+265,2,265,Paracoccus,,bacteria,FALSE,1.26212,493,1,,,93.798,387,10^-219.109,,,,,,,,,[2760307],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+237,2,237,Flavobacterium,,bacteria,FALSE,9.36736,3659,7,,,92.4199,477,10^-199.913,,,,,,,,,"[1751095, 1751056]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,41.0715,16043,36,,,96.0809,378.083,10^-208.191,,,,,,,,,"[2100421, 2065442, 2026786, 1156560, 511912, 175245, 152507, 86027, 77133, -100]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+-200002049,2,-200002049,non-genus-specific reads in family Actinomycetaceae,,bacteria,FALSE,7.34489,2869,5,,,82.491,332.2,10^-134.637,,,,,,,,,[2788945],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+-200011006,2,-200011006,non-genus-specific reads in family Totiviridae,,viruses,FALSE,1.41317,552,1,,,85.771,506,10^-234.775,,,,,,,,,[2727863],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+-200031989,2,-200031989,non-genus-specific reads in family Paracoccaceae,,bacteria,FALSE,0.550419,215,1,,,95.238,168,10^-91.1545,,,,,,,,,[1904441],0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,138.787,54212,89,,,90.742,555.326,10^-226.097,,,,,,,,,"[2055263, 432261, 68887]",0,RDC_INC_PAN_bi_007_775874_taxon_report,PAN007,Standard SISPA
+3026546,2,3026546,Duffyella,,bacteria,FALSE,4.29643,731,1,,,80.108,186,10^-63.6629,,,,,,,,,[1619313],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+2901164,2,2901164,Stutzerimonas,,bacteria,FALSE,3.32665,566,1,,,95.833,408,10^-243.102,,,,,,,,,[316],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+2714592,2,2714592,Crateriforma,,bacteria,FALSE,11.6903,1989,3,,,86.6307,390.333,10^-69.5687,,,,,,,,,[2527996],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1979940,2,1979940,Medioppia,,eukaryota,FALSE,3.66754,624,1,,,84.035,451,10^-197.084,,,,,,,,,[1979941],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1912216,2,1912216,Cutibacterium,,bacteria,FALSE,4.75487,809,1,,,97.664,642,10^-307.653,,,,,,,,,[1747],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1866885,2,1866885,Mycolicibacterium,,bacteria,FALSE,41.589,7076,15,,,91.7821,73.9333,10^-29.4355,,,,,,,,,[59813],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1524217,2,1524217,Labilithrix,,bacteria,FALSE,3.13857,534,1,,,92.821,195,10^-101.383,,,,,,,,,[1391654],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1129544,2,1129544,Rhizophagus,,eukaryota,FALSE,4.39635,748,1,,,83.788,586,10^-258.041,,,,,,,,,[588596],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+1046314,2,1046314,Bimastos,,eukaryota,FALSE,2.686,457,1,,,80.992,121,10^-38.4608,,,,,,,,,[320977],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+687332,2,687332,Betatorquevirus,,viruses,FALSE,7.48202,1273,2,,,90.4975,442,10^-230.721,,,,,,,,,[93678],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+687097,2,687097,Horisme,,eukaryota,FALSE,1.63394,278,1,,,87.755,98,10^-37.8662,,,,,,,,,[934869],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+572908,2,572908,Udea,,eukaryota,FALSE,3.40306,579,1,,,81.429,140,10^-47.3178,,,,,,,,,[1002954],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+469322,2,469322,Steroidobacter,,bacteria,FALSE,3.53824,602,1,,,88.914,451,10^-227.277,,,,,,,,,[465721],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+433085,2,433085,Brachypterus,,eukaryota,FALSE,4.9312,839,1,,,80.285,421,10^-161.433,,,,,,,,,[442081],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+366614,2,366614,Haematobacter,,bacteria,FALSE,4.92532,838,1,,,93.0793,708,10^-175.54,,,,,,,,,[195105],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+334624,2,334624,Oppiella,,eukaryota,FALSE,3.46183,589,1,,,87.467,383,10^-183.432,,,,,,,,,[334625],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+294691,2,294691,Psylliodes,,eukaryota,FALSE,7.18227,1222,2,,,82.195,389.5,10^-156.409,,,,,,,,,[2598218],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+287191,2,287191,Sesia,,eukaryota,FALSE,4.40223,749,1,,,80.495,323,10^-121.749,,,,,,,,,[748215],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+271028,2,271028,Anisus,,eukaryota,FALSE,5.07226,863,1,,,82.244,704,10^-297.76,,,,,,,,,[271030],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+106589,2,106589,Cupriavidus,,bacteria,FALSE,3.89089,662,1,,,95.303,511,10^-304.075,,,,,,,,,[119219],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+103830,2,103830,Mythimna,,eukaryota,FALSE,3.22673,549,1,,,85.266,414,10^-186.829,,,,,,,,,[987427],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+96550,2,96550,Tuberolachnus,,eukaryota,FALSE,3.3384,568,1,,,83.5196,358,10^-57.2608,,,,,,,,,[96551],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+72714,2,72714,Agelas,,eukaryota,FALSE,6.7297,1145,2,,,82.9995,432,10^-184.078,,,,,,,,,[72715],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+72691,2,72691,Lottia,,eukaryota,FALSE,1.46349,249,1,,,92.754,69,10^-27.7257,,,,,,,,,[225159],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+61471,2,61471,Timema,,eukaryota,FALSE,2.52731,430,1,,,82.482,274,10^-108.783,,,,,,,,,[170555],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+53457,2,53457,Janibacter,,bacteria,FALSE,5.63062,958,1,,,96.101,436,10^-262.287,,,,,,,,,[857417],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+46594,2,46594,Harmothoe,,eukaryota,FALSE,5.23095,890,1,,,80.247,729,10^-288.825,,,,,,,,,[46595],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+33196,2,33196,Botrytis,,eukaryota,FALSE,2085.46,354822,818,,,98.1814,73.9731,10^-24.4314,,,,,,,,,[40559],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+7008,2,7008,Schistocerca,,eukaryota,FALSE,3.47359,591,1,,,83.405,464,10^-199.131,,,,,,,,,[7010],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+6643,2,6643,Octopus,,eukaryota,FALSE,2.93874,500,1,,,82.584,356,10^-145.723,,,,,,,,,[6645],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,404.164,68765,101,,,95.0592,501.802,10^-237.745,,,,,,,,,"[880534, 5854, 5833]",1,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,204.007,34710,58,,,96.0302,424.931,10^-196.894,,,,,,,,,[5763],1,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+3913,2,3913,Vigna,,eukaryota,FALSE,2.40976,410,1,,,85.441,261,10^-113.607,,,,,,,,,[3914],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+3633,2,3633,Gossypium,,eukaryota,FALSE,2.45091,417,1,,,90.458,262,10^-132.133,,,,,,,,,[3635],0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+590,2,590,Salmonella,,bacteria,FALSE,113.641,19335,24,,,99.5038,68.4583,10^-20.564,,,,,,,,,[28901],1,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+374,2,374,Bradyrhizobium,,bacteria,FALSE,12.1135,2061,3,,,92.9653,533,10^-155.262,,,,,,,,,"[2866194, 2715960, 2170627]",0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,8.01099,1363,3,,,90.632,284.333,10^-149.285,,,,,,,,,"[498747, 100272, 77133]",0,RDC_INC_PAN_bi_019_775877_taxon_report,PAN019,Standard SISPA
+2805645,2,2805645,Pedococcus,,bacteria,FALSE,8.61267,657,1,,,93.529,510,10^-291.038,,,,,,,,,[443156],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+687332,2,687332,Betatorquevirus,,viruses,FALSE,61.1146,4662,6,,,91.4863,574.333,10^-199.788,,,,,,,,,[93678],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+347361,2,347361,Hermaeophaga,,eukaryota,FALSE,9.32056,711,1,,,86.679,563,10^-269.724,,,,,,,,,[347362],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+80248,2,80248,Phaedon,,eukaryota,FALSE,5.87287,448,1,,,84.074,270,10^-112.906,,,,,,,,,[80249],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+60940,2,60940,Branchellion,,eukaryota,FALSE,19.2441,1468,2,,,80.266,613,10^-240.868,,,,,,,,,[375517],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+13687,2,13687,Sphingomonas,,bacteria,FALSE,10.697,816,1,,,93.731,670,10^-307.653,,,,,,,,,[2219696],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+6054,2,6054,Spongilla,,eukaryota,FALSE,5.71556,436,1,,,82.986,288,10^-116.995,,,,,,,,,[6055],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+5820,2,5820,Plasmodium,,eukaryota,FALSE,1124.89,85810,128,,,94.5729,481.664,10^-222.385,,,,,,,,,"[880535, 880534, 647221, 5854, 5833]",1,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,170.261,12988,21,,,95.7756,452.619,10^-225.166,,,,,,,,,[5763],1,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+4930,2,4930,Saccharomyces,,eukaryota,FALSE,401.518,30629,51,,,94.8055,421.588,10^-224.293,,,,,,,,,"[27292, 4932]",1,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+4830,2,4830,Mucor,,eukaryota,FALSE,3634.36,277240,619,,,98.499,70.1454,10^-26.5158,,,,,,,,,[1715236],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+1654,2,1654,Actinomyces,,bacteria,FALSE,13.2533,1011,2,,,93.9305,217.5,10^-117.475,,,,,,,,,[544580],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+1578,2,1578,Lactobacillus,,bacteria,FALSE,11.9162,909,1,,,93.846,780,10^-307.653,,,,,,,,,[1584],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+1386,2,1386,Bacillus,,bacteria,FALSE,6.89538,526,1,,,95.592,363,10^-213.647,,,,,,,,,[1479],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+1298,2,1298,Deinococcus,,bacteria,FALSE,17.4482,1331,1,,,91.3041,1150,10^-298.25,,,,,,,,,[2080419],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+561,2,561,Escherichia,,bacteria,FALSE,9.55653,729,1,,,98.328,299,10^-184.912,,,,,,,,,[562],1,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,15.7178,1199,1,,,93.1162,1075,10^-205.756,,,,,,,,,[202956],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+374,2,374,Bradyrhizobium,,bacteria,FALSE,12.021,917,1,,,81.818,693,10^-288.847,,,,,,,,,[2590772],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,25.235,1925,3,,,96.0263,448,10^-217.987,,,,,,,,,[287],1,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+265,2,265,Paracoccus,,bacteria,FALSE,9.45165,721,1,,,96.51,573,10^-307.653,,,,,,,,,[2760307],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,5.89909,450,1,,,90.584,308,10^-158.137,,,,,,,,,[2832643],0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,244.091,18620,24,,,94.0877,590.167,10^-267.76,,,,,,,,,"[432261, 68887]",0,RDC_INC_PAN_bi_020_775878_taxon_report,PAN020,Standard SISPA
+2944547,2,2944547,Thermochaetoides,,eukaryota,FALSE,7.73282,1906,5,,,94.4028,262.8,10^-142.343,,,,,,,,,[209285],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2901164,2,2901164,Stutzerimonas,,bacteria,FALSE,25.4258,6267,12,,,97.071,480.417,10^-268.491,,,,,,,,,[316],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2803850,2,2803850,Mammaliicoccus,,bacteria,FALSE,5.87062,1447,4,,,98.854,318,10^-200.331,,,,,,,,,[1296],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2676247,2,2676247,Aquirufa,,bacteria,FALSE,2.81968,695,2,,,89.55,294,10^-150.628,,,,,,,,,[2696560],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2529408,2,2529408,Schaalia,,bacteria,FALSE,3.1767,783,2,,,95.197,354,10^-206.11,,,,,,,,,[1660],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2045416,2,2045416,Oceanihabitans,,bacteria,FALSE,4.6332,1142,3,,,82.1587,332.333,10^-133.173,,,,,,,,,[2529032],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1912216,2,1912216,Cutibacterium,,bacteria,FALSE,956.16,235676,366,,,96.9768,596.844,10^-269.629,,,,,,,,,[1747],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1847725,2,1847725,Lawsonella,,bacteria,FALSE,11.0962,2735,4,,,95.0263,663.25,10^-307.653,,,,,,,,,[1528099],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1778601,2,1778601,Apibacter,,bacteria,FALSE,1.31044,323,1,,,81.784,269,10^-103.988,,,,,,,,,[2500547],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1742989,2,1742989,Glutamicibacter,,bacteria,FALSE,1.21307,299,1,,,98.78,246,10^-151.373,,,,,,,,,[1775880],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1658452,2,1658452,Cephalotrichum,,eukaryota,FALSE,1.3429,331,1,,,95.638,298,10^-173.248,,,,,,,,,[186354],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1511864,2,1511864,Aveparvovirus,,viruses,FALSE,6.45484,1591,5,,,95.4896,280.8,10^-162.299,,,,,,,,,[3042447],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1508257,2,1508257,Cephalotrichiella,,eukaryota,FALSE,6.22764,1535,3,,,93.5597,370,10^-191.833,,,,,,,,,[1508258],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1503932,2,1503932,Graphium,,eukaryota,FALSE,1.20496,297,1,,,99.111,225,10^-138.374,,,,,,,,,[67620],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1295327,2,1295327,Croceicoccus,,bacteria,FALSE,4.04087,996,3,,,95.4643,280.667,10^-161.838,,,,,,,,,"[1703340, 1703338]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1219203,2,1219203,Sicus,,eukaryota,FALSE,1.89466,467,1,,,95.37,432,10^-255.429,,,,,,,,,[1219204],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1150382,2,1150382,Parascedosporium,,eukaryota,FALSE,4.51555,1113,3,,,96.7483,335.667,10^-201.794,,,,,,,,,"[1442378, 1150383]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1129544,2,1129544,Rhizophagus,,eukaryota,FALSE,4.43846,1094,2,,,99.4955,499,10^-307.653,,,,,,,,,[588596],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1046314,2,1046314,Bimastos,,eukaryota,FALSE,11.6114,2862,7,,,86.7561,378.143,10^-175.215,,,,,,,,,[320977],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1036719,2,1036719,Verticillium,,eukaryota,FALSE,1.33073,328,1,,,93.038,158,10^-80.2022,,,,,,,,,[27337],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+987474,2,987474,Charanyca,,eukaryota,FALSE,1.01427,250,1,,,81.295,139,10^-46.6348,,,,,,,,,[987475],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+688980,2,688980,Metalampra,,eukaryota,FALSE,4.85634,1197,2,,,84.4003,121.5,10^-24.1162,,,,,,,,,[1101017],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+687333,2,687333,Gammatorquevirus,,viruses,FALSE,81.2839,20035,30,,,87.197,562.733,10^-250.978,,,,,,,,,"[3048385, 3048380, 2809423]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+687332,2,687332,Betatorquevirus,,viruses,FALSE,236.005,58171,95,,,94.2128,562.253,10^-262.04,,,,,,,,,"[3050361, 3048405, 93678]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+682522,2,682522,Ilumatobacter,,bacteria,FALSE,1.16033,286,1,,,89.848,197,10^-94.5163,,,,,,,,,[467094],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+665874,2,665874,Limnohabitans,,bacteria,FALSE,6.30472,1554,5,,,85.7938,267,10^-117.444,,,,,,,,,"[2986280, 1678128]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+648802,2,648802,Rummeliibacillus,,bacteria,FALSE,1.15627,285,1,,,94.937,237,10^-132.862,,,,,,,,,[241244],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+572706,2,572706,Argyresthia,,eukaryota,FALSE,1.18467,292,1,,,90.114,263,10^-131.445,,,,,,,,,[572725],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+522886,2,522886,Amorpha,,eukaryota,FALSE,3.96784,978,2,,,97.0925,51,10^-20.3093,,,,,,,,,[522887],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+501783,2,501783,Cloacibacterium,,bacteria,FALSE,18.5612,4575,7,,,94.6819,607.857,10^-303.98,,,,,,,,,[2004710],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+387658,2,387658,Marixanthomonas,,bacteria,FALSE,2.86025,705,2,,,82.921,216.5,10^-83.1709,,,,,,,,,[2779360],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+337004,2,337004,Microcella,,bacteria,FALSE,69.6725,17173,30,,,95.4926,530.6,10^-258.955,,,,,,,,,"[2963406, 1789367, 1263318, 499806, 279828]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+320234,2,320234,Leptophobia,,eukaryota,FALSE,1.82569,450,2,,,93.122,191,10^-95.259,,,,,,,,,[320235],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+320033,2,320033,Diarsia,,eukaryota,FALSE,4.17475,1029,3,,,82.9807,157.667,10^-58.9357,,,,,,,,,[987923],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+309576,2,309576,Ecdyonurus,,eukaryota,FALSE,20.7764,5121,10,,,96.6566,200.2,10^-114.958,,,,,,,,,[2014018],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+294691,2,294691,Psylliodes,,eukaryota,FALSE,12.3823,3052,6,,,87.7385,474,10^-232.058,,,,,,,,,[2598218],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+290671,2,290671,Ocypus,,eukaryota,FALSE,2.90894,717,2,,,86.792,339,10^-156.065,,,,,,,,,[662956],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+286498,2,286498,Palloptera,,eukaryota,FALSE,1.74049,429,1,,,84.08,402,10^-174.49,,,,,,,,,[2849646],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+254394,2,254394,Monilia,,eukaryota,FALSE,17.8228,4393,13,,,97.2963,250.077,10^-145.295,,,,,,,,,[180977],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+244127,2,244127,Anaerotruncus,,bacteria,FALSE,4.35326,1073,3,,,87.2903,317.333,10^-148.975,,,,,,,,,[169435],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+241717,2,241717,Brachyconidiellopsis,,eukaryota,FALSE,195.686,48233,110,,,96.1061,382.118,10^-222.287,,,,,,,,,[241718],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+212791,2,212791,Enhydrobacter,,bacteria,FALSE,1.46461,361,1,,,97.84,324,10^-199.287,,,,,,,,,[374451],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+212336,2,212336,Ophidonais,,eukaryota,FALSE,8.3495,2058,5,,,99.0322,74.4,10^-29.0073,,,,,,,,,[212337],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+197911,2,197911,Alphainfluenzavirus,,viruses,FALSE,0.462509,114,1,,,97.872,47,10^-18.2859,,,,,,,,,[2955291],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+169133,2,169133,Citricoccus,,bacteria,FALSE,7.72876,1905,2,,,92.4645,915.5,10^-307.653,,,,,,,,,[2567881],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+166220,2,166220,Conomelus,,eukaryota,FALSE,1.05079,259,1,,,80.921,152,10^-51.3992,,,,,,,,,[491269],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+161109,2,161109,Wolffia,,eukaryota,FALSE,7.98436,1968,5,,,82.1184,325.6,10^-130.952,,,,,,,,,[161112],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+158846,2,158846,Megamonas,,bacteria,FALSE,13.502,3328,5,,,80.3714,441,10^-170.196,,,,,,,,,[437897],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+156307,2,156307,Coelioxys,,eukaryota,FALSE,1.62689,401,1,,,80.769,130,10^-41.8605,,,,,,,,,[2922063],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+153220,2,153220,Contarinia,,eukaryota,FALSE,0.941246,232,1,,,93.548,124,10^-61.0943,,,,,,,,,[265458],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+152317,2,152317,Truncatella,,eukaryota,FALSE,4.66566,1150,3,,,84.1837,178.667,10^-69.6332,,,,,,,,,[152316],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+143716,2,143716,Protonemura,,eukaryota,FALSE,1.12787,278,1,,,96.154,234,10^-134.926,,,,,,,,,[2884235],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+138117,2,138117,Quatrionicoccus,,bacteria,FALSE,3.42824,845,2,,,81.0675,364.5,10^-141.939,,,,,,,,,[138118],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+129316,2,129316,Enterocarpus,,eukaryota,FALSE,3.3755,832,1,,,100,88,10^-47.5195,,,,,,,,,[129317],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+125287,2,125287,Ornithinimicrobium,,bacteria,FALSE,1.22524,302,1,,,98.496,266,10^-163.691,,,,,,,,,[1288636],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+121476,2,121476,Aplysina,,eukaryota,FALSE,1.4565,359,1,,,95.092,326,10^-188.305,,,,,,,,,[289389],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+115303,2,115303,Nephrocerus,,eukaryota,FALSE,1.67558,413,1,,,93.072,332,10^-182.808,,,,,,,,,[566305],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+110564,2,110564,Clonostachys,,eukaryota,FALSE,1.40375,346,1,,,81.008,258,10^-96.4577,,,,,,,,,[160290],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+104514,2,104514,Melitaea,,eukaryota,FALSE,3.87047,954,2,,,88.4915,360,10^-182.815,,,,,,,,,[113334],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+100815,2,100815,Madurella,,eukaryota,FALSE,20.7155,5106,10,,,95.3083,301.5,10^-21.3811,,,,,,,,,[100816],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+98005,2,98005,Eutrema,,eukaryota,FALSE,5.66776,1397,3,,,91.8403,61,10^-22.2903,,,,,,,,,[72664],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+93681,2,93681,Roseateles,,bacteria,FALSE,8.29676,2045,5,,,96.0066,370.4,10^-220.363,,,,,,,,,[280924],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+93111,2,93111,Bacidia,,eukaryota,FALSE,2.04883,505,1,,,95.8902,219,10^-21.7555,,,,,,,,,[1885590],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+89486,2,89486,Basipetospora,,eukaryota,FALSE,240.042,59166,151,,,96.4401,340.894,10^-202.434,,,,,,,,,[89487],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+88591,2,88591,Sphecodes,,eukaryota,FALSE,1.92712,475,1,,,83.942,137,10^-50.7582,,,,,,,,,[1190790],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+86017,2,86017,Salpingoeca,,eukaryota,FALSE,1.57415,388,1,,,82.663,323,10^-131.356,,,,,,,,,[1864495],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+85919,2,85919,Nais,,eukaryota,FALSE,1.29016,318,1,,,96.715,274,10^-162.305,,,,,,,,,[85920],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+83850,2,83850,Baikalospongia,,eukaryota,FALSE,1.33073,328,1,,,94.286,70,10^-29.7781,,,,,,,,,[83851],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+83654,2,83654,Leclercia,,bacteria,FALSE,4.61292,1137,2,,,97.425,523,10^-307.653,,,,,,,,,[83655],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+79820,2,79820,Lophotrichus,,eukaryota,FALSE,1362.81,335908,662,,,96.5626,452.857,10^-232.908,,,,,,,,,"[2801808, 2075132, 2075131, 2075130, 2075129, 79822, 79821, 70117]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+79818,2,79818,Kernia,,eukaryota,FALSE,13.9361,3435,8,,,97.0693,260.875,10^-125.046,,,,,,,,,"[129319, 79819]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+74730,2,74730,Nais,,eukaryota,FALSE,6.63335,1635,4,,,99.5934,92.5,10^-28.9526,,,,,,,,,"[1138465, 1138464, 74736]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+74726,2,74726,Chaetogaster,,eukaryota,FALSE,3.37956,833,2,,,100,93,10^-29.8308,,,,,,,,,[74727],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+72763,2,72763,Tessaracoccus,,bacteria,FALSE,37.735,9301,8,,,97.0188,1134.25,10^-307.653,,,,,,,,,"[1909732, 1427523]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+69354,2,69354,Darwinula,,eukaryota,FALSE,12.7596,3145,7,,,91.8256,272,10^-112.848,,,,,,,,,[69355],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+67575,2,67575,Rheinheimera,,bacteria,FALSE,40.9766,10100,15,,,84.5315,608.6,10^-261.282,,,,,,,,,"[3019969, 1763998]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+66017,2,66017,Digitaria,,eukaryota,FALSE,1.29016,318,1,,,90.722,291,10^-149.242,,,,,,,,,[1010633],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+60957,2,60957,Piscicola,,eukaryota,FALSE,22.9023,5645,13,,,94.0629,389.462,10^-216.166,,,,,,,,,[60958],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+60940,2,60940,Branchellion,,eukaryota,FALSE,14.5082,3576,10,,,88.981,261,10^-128.861,,,,,,,,,[375517],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+60834,2,60834,Nebria,,eukaryota,FALSE,0.94936,234,1,,,97.468,158,10^-89.8088,,,,,,,,,[110024],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+59732,2,59732,Chryseobacterium,,bacteria,FALSE,7.89916,1947,6,,,90.7932,286.833,10^-148.448,,,,,,,,,"[2478663, 1871047, 373672]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+56391,2,56391,Lithophane,,eukaryota,FALSE,1.5701,387,1,,,91.358,81,10^-33.1456,,,,,,,,,[997537],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+55709,2,55709,Cerastoderma,,eukaryota,FALSE,3.97595,980,2,,,95.282,447,10^-256.541,,,,,,,,,[55710],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+55193,2,55193,Malassezia,,eukaryota,FALSE,265.342,65402,128,,,96.1742,474.398,10^-260.049,,,,,,,,,"[77020, 76775, 76773]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+55170,2,55170,Didymella,,eukaryota,FALSE,1.55792,384,1,,,85.263,95,10^-33.0764,,,,,,,,,[100019],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+54304,2,54304,Planktothrix,,bacteria,FALSE,1.0873,268,1,,,98.661,224,10^-136.318,,,,,,,,,[1160],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+53457,2,53457,Janibacter,,bacteria,FALSE,12.723,3136,6,,,93.8162,492.167,10^-242.916,,,,,,,,,"[2761047, 857417, 262209]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+50416,2,50416,Mimachlamys,,eukaryota,FALSE,1.35101,333,1,,,88.421,285,10^-136.899,,,,,,,,,[50417],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+48720,2,48720,Andrena,sand bees,eukaryota,FALSE,1.18061,291,1,,,81.152,191,10^-68.4547,,,,,,,,,[1542580],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+47420,2,47420,Hydrogenophaga,,bacteria,FALSE,1.60661,396,1,,,86.254,291,10^-131.401,,,,,,,,,[65656],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+45350,2,45350,Nematostella,,eukaryota,FALSE,1.30638,322,1,,,89.42,293,10^-145.122,,,,,,,,,[45351],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+44013,2,44013,Polynucleobacter,,bacteria,FALSE,70.1066,17280,29,,,94.0893,551.897,10^-288.94,,,,,,,,,"[2770234, 2689102, 556054]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+42313,2,42313,Petriella,,eukaryota,FALSE,91.7512,22615,38,,,94.5911,532.579,10^-237.852,,,,,,,,,"[1587959, 79823, 42314]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+41687,2,41687,Scedosporium,,eukaryota,FALSE,147.853,36443,92,,,93.3808,346.674,10^-176.201,,,,,,,,,"[563466, 5597]",2,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+41275,2,41275,Brevundimonas,,bacteria,FALSE,1.46461,361,1,,,93.438,320,10^-177.334,,,,,,,,,[3015999],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+41247,2,41247,Mycena,,eukaryota,FALSE,2.18677,539,1,,,88.61,518,10^-260.839,,,,,,,,,[756060],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+40615,2,40615,Melanospora,,eukaryota,FALSE,3.06716,756,2,,,91.521,336.5,10^-178.342,,,,,,,,,[2036937],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+40374,2,40374,Scopulariopsis,,eukaryota,FALSE,758.989,187077,386,,,93.2317,441.018,10^-229.853,,,,,,,,,"[561152, 186361]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+39725,2,39725,Circovirus,,viruses,FALSE,22.9591,5659,12,,,95.3167,439.25,10^-243.06,,,,,,,,,[1964372],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+37858,2,37858,Ostrea,,eukaryota,FALSE,5.06731,1249,3,,,84.464,391.667,10^-167.541,,,,,,,,,[37623],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+34363,2,34363,Trigonopsis,,eukaryota,FALSE,0.657249,162,1,,,100,66,10^-32.5484,,,,,,,,,[34364],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+34072,2,34072,Variovorax,,bacteria,FALSE,6.41832,1582,4,,,82.1275,352.5,10^-141.953,,,,,,,,,"[662548, 34073]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+33886,2,33886,Rathayibacter,,bacteria,FALSE,1.56198,385,1,,,97.977,346,10^-214.354,,,,,,,,,[110937],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+33465,2,33465,Yponomeuta,European small ermine moth,eukaryota,FALSE,4.70623,1160,3,,,93.617,344.333,10^-192.627,,,,,,,,,[263933],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+33196,2,33196,Botrytis,,eukaryota,FALSE,13.6359,3361,6,,,100,41.6667,10^-16.051,,,,,,,,,[40559],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+32207,2,32207,Rothia,,bacteria,FALSE,1.35507,334,1,,,96.575,292,10^-173.257,,,,,,,,,[2047],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+32012,2,32012,Thiomonas,,bacteria,FALSE,4.89691,1207,3,,,92.5407,357.333,10^-195.127,,,,,,,,,[364030],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+28453,2,28453,Sphingobacterium,,bacteria,FALSE,15.0194,3702,7,,,86.7251,483.571,10^-232.151,,,,,,,,,"[28454, 259]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+28065,2,28065,Rhodoferax,,bacteria,FALSE,1.57415,388,1,,,82.67,352,10^-144.356,,,,,,,,,[2741720],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+13687,2,13687,Sphingomonas,,bacteria,FALSE,4.53989,1119,3,,,96.6973,332.667,10^-199.277,,,,,,,,,"[2938948, 2900093]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+10242,2,10242,Orthopoxvirus,,viruses,FALSE,1.57821,389,1,,,92.754,276,10^-148.578,,,,,,,,,[10244],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+7451,2,7451,Vespula,,eukaryota,FALSE,1.73644,428,1,,,96.154,52,10^-20.3006,,,,,,,,,[7454],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+7443,2,7443,Vespa,,eukaryota,FALSE,7.69225,1896,5,,,90.8718,85.2,10^-34.9079,,,,,,,,,[7445],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+7215,2,7215,Drosophila,fruit flies,eukaryota,FALSE,2.2882,564,1,,,81.386,505,10^-203.897,,,,,,,,,[7283],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6668,2,6668,Daphnia,common water fleas,eukaryota,FALSE,2.02043,498,1,,,92.157,51,10^-16.8781,,,,,,,,,[6669],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6643,2,6643,Octopus,,eukaryota,FALSE,26.6186,6561,12,,,89.8694,181.417,10^-84.1369,,,,,,,,,[6645],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6603,2,6603,Mya,,eukaryota,FALSE,2.32471,573,1,,,87.719,228,10^-104.746,,,,,,,,,[6604],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6582,2,6582,Spisula,,eukaryota,FALSE,9.76948,2408,6,,,81.4557,379.333,10^-150.271,,,,,,,,,[31201],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6525,2,6525,Biomphalaria,,eukaryota,FALSE,1.87438,462,1,,,91.324,438,10^-234.837,,,,,,,,,[6526],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6397,2,6397,Lumbricus,,eukaryota,FALSE,12.8001,3155,7,,,90.2143,326.571,10^-163.079,,,,,,,,,[6398],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6288,2,6288,Haemonchus,,eukaryota,FALSE,3.81367,940,2,,,88.9855,318,10^-136.932,,,,,,,,,[6289],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+6054,2,6054,Spongilla,,eukaryota,FALSE,1.30638,322,1,,,88.75,80,10^-29.7201,,,,,,,,,[6055],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5935,2,5935,Euplotes,,eukaryota,FALSE,3.8015,937,2,,,83.961,405.5,10^-175.516,,,,,,,,,[5941],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5931,2,5931,Ichthyophthirius,,eukaryota,FALSE,25.9979,6408,11,,,85.9625,534.455,10^-250.291,,,,,,,,,[5932],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5782,2,5782,Dictyostelium,,eukaryota,FALSE,0.892561,220,1,,,85.246,183,10^-75.3351,,,,,,,,,[44689],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5761,2,5761,Naegleria,,eukaryota,FALSE,217.403,53586,140,,,95.3339,335.357,10^-189.774,,,,,,,,,[5763],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5596,2,5596,Pseudallescheria,,eukaryota,FALSE,3.3187,818,1,,,97.159,176,10^-43.6854,,,,,,,,,[70116],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5543,2,5543,Trichoderma,,eukaryota,FALSE,0.661306,163,1,,,96.063,127,10^-67.2595,,,,,,,,,[29875],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5506,2,5506,Fusarium,,eukaryota,FALSE,7.89916,1947,6,,,91.2148,223.333,10^-115.785,,,,,,,,,"[282267, 195108, 117187, 5518]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5455,2,5455,Colletotrichum,,eukaryota,FALSE,7.87076,1940,4,,,89.9685,254.25,10^-126.832,,,,,,,,,"[1836956, 145971, 31870]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5269,2,5269,Ustilago,,eukaryota,FALSE,0.941246,232,1,,,96.429,196,10^-111.673,,,,,,,,,[120017],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5112,2,5112,Epichloe,,eukaryota,FALSE,1.98392,489,1,,,80.328,122,10^-37.771,,,,,,,,,[79591],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+5052,2,5052,Aspergillus,,eukaryota,FALSE,56.1542,13841,29,,,95.9586,418.621,10^-224.879,,,,,,,,,"[2059691, 1915373, 1915371, 182096, 41959, 41061, 5062, 5059]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+4930,2,4930,Saccharomyces,,eukaryota,FALSE,0.961531,237,1,,,91.837,196,10^-99.3218,,,,,,,,,[27291],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+4512,2,4512,Hordeum,,eukaryota,FALSE,31.1625,7681,9,,,80.9083,887.556,10^-307.653,,,,,,,,,[4513],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+4473,2,4473,Spirodela,,eukaryota,FALSE,1.01833,251,1,,,90.749,227,10^-113.668,,,,,,,,,[51605],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+3749,2,3749,Malus,,eukaryota,FALSE,25.2392,6221,20,,,90.4295,287.6,10^-146.102,,,,,,,,,[3752],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+3633,2,3633,Gossypium,,eukaryota,FALSE,1.0021,247,1,,,87.288,236,10^-107.475,,,,,,,,,[3635],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+3554,2,3554,Beta,,eukaryota,FALSE,2.96168,730,2,,,86.8815,238,10^-109.57,,,,,,,,,[161934],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2701,2,2701,Gardnerella,,bacteria,FALSE,5.30262,1307,4,,,91.378,287.75,10^-149.772,,,,,,,,,"[2792979, 2792978]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2053,2,2053,Gordonia,,bacteria,FALSE,3.01442,743,1,,,95.417,720,10^-307.653,,,,,,,,,[692363],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+2040,2,2040,Aeromicrobium,,bacteria,FALSE,16.772,4134,8,,,96.838,474.375,10^-291.084,,,,,,,,,"[886129, 560557, 472079]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1854,2,1854,Frankia,,bacteria,FALSE,1.26987,313,1,,,84.932,73,10^-22.2118,,,,,,,,,[1858],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1847,2,1847,Pseudonocardia,,bacteria,FALSE,11.3801,2805,4,,,96.7915,667.75,10^-307.653,,,,,,,,,"[1576882, 445576]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1716,2,1716,Corynebacterium,,bacteria,FALSE,139.523,34390,58,,,95.6015,549.259,10^-258.864,,,,,,,,,"[2487892, 2041036, 163202, 159447, 43990, 43769, 43768, 38304, 38289, 38284]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1386,2,1386,Bacillus,,bacteria,FALSE,4.16664,1027,3,,,97.6687,300,10^-182.852,,,,,,,,,[1405],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1378,2,1378,Gemella,,bacteria,FALSE,7.83019,1930,5,,,96.8774,351.2,10^-212.426,,,,,,,,,[1379],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1301,2,1301,Streptococcus,,bacteria,FALSE,17.1656,4231,6,,,97.1042,664.667,10^-250.736,,,,,,,,,"[712633, 45634, 28037]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1279,2,1279,Staphylococcus,,bacteria,FALSE,242.448,59759,97,,,96.1898,572.392,10^-270.597,,,,,,,,,"[2930131, 985002, 189668, 94138, 29388, 29387, 29382, 29378, 1293, 1290, 1288, 1282]",2,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1269,2,1269,Micrococcus,,bacteria,FALSE,525.15,129440,198,,,96.9111,606.98,10^-283.535,,,,,,,,,"[1756580, 1661091, 1415425, 1179670, 989149, 566027, 509600, 455343, 1270]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1263,2,1263,Ruminococcus,,bacteria,FALSE,1.4565,359,1,,,88.401,319,10^-154.691,,,,,,,,,[1160721],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+1177,2,1177,Nostoc,,bacteria,FALSE,1.81758,448,1,,,97.739,398,10^-247.23,,,,,,,,,[224012],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+848,2,848,Fusobacterium,,bacteria,FALSE,33.5075,8259,14,,,96.9954,557.429,10^-307.653,,,,,,,,,"[1583098, 159267]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+724,2,724,Haemophilus,,bacteria,FALSE,1.2577,310,1,,,89.905,317,10^-160.183,,,,,,,,,[729],1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+620,2,620,Shigella,,bacteria,FALSE,21.0807,5196,7,,,97.5987,700.286,10^-288.231,,,,,,,,,[1813821],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+590,2,590,Salmonella,,bacteria,FALSE,16.2811,4013,9,,,99.6307,76.6667,10^-38.1385,,,,,,,,,"[2664291, 28901]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+570,2,570,Klebsiella,,bacteria,FALSE,5.44056,1341,3,,,96.4833,398,10^-240.368,,,,,,,,,"[2489010, 573]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+561,2,561,Escherichia,,bacteria,FALSE,429.5,105864,163,,,96.9805,604.086,10^-283.237,,,,,,,,,"[208962, 564, 562]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+482,2,482,Neisseria,,bacteria,FALSE,136.124,33552,58,,,96.5569,541.69,10^-275.126,,,,,,,,,"[1871109, 1278562, 33053, 28449, 490, 488, 487]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+475,2,475,Moraxella,,bacteria,FALSE,35.3779,8720,10,,,96.8816,765,10^-271.591,,,,,,,,,"[34062, 34059]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+469,2,469,Acinetobacter,,bacteria,FALSE,125.624,30964,57,,,96.1142,472.053,10^-249.321,,,,,,,,,"[2950076, 1608473, 756892, 280145, 134534, 108980, 106654, 40215, 40214, 470]",1,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+434,2,434,Acetobacter,,bacteria,FALSE,0.989931,244,1,,,90.863,197,10^-97.261,,,,,,,,,[2500548],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+374,2,374,Bradyrhizobium,,bacteria,FALSE,3.85424,950,2,,,95.583,419,10^-248.58,,,,,,,,,[1325115],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+286,2,286,Pseudomonas,,bacteria,FALSE,26.0384,6418,15,,,96.5116,373,10^-223.886,,,,,,,,,"[2983246, 2479393, 2479392, 1940636, 1274359, 47886]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+283,2,283,Comamonas,,bacteria,FALSE,53.367,13154,23,,,95.5141,483.348,10^-287.232,,,,,,,,,"[2796366, 225991, 114710, 32013]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+237,2,237,Flavobacterium,,bacteria,FALSE,789.34,194558,427,,,89.9442,402.169,10^-194.327,,,,,,,,,"[3025668, 3016339, 3003623, 3003260, 3002900, 2986831, 2986828, 2897181, 2893885, 2871165, 2739062, 2724135, 2704140, 1979344, 1763534, 1751095, 1751056, 1306518, 1114861, 992289, 683124, 55197, 986]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+75,2,75,Caulobacter,,bacteria,FALSE,1.01833,251,1,,,98.99,198,10^-119.903,,,,,,,,,[1533990],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200,2,-200,all taxa with neither family nor genus classification,,,FALSE,562.049,138535,293,,,95.631,377.802,10^-191.822,,,,,,,,,"[2963861, 2963853, 2875815, 2832643, 2100421, 2052160, 2052143, 2021391, 1928008, 929195, 675660, 644529, 410823, 175245, 175243, 164851, 155900, 152507, 100272, 77133, 67625]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200000481,2,-200000481,non-genus-specific reads in family Neisseriaceae,,bacteria,FALSE,55.8175,13758,22,,,88.344,562.5,10^-255.983,,,,,,,,,[2014784],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200001268,2,-200001268,non-genus-specific reads in family Micrococcaceae,,bacteria,FALSE,1.99203,491,1,,,95.281,445,10^-262.964,,,,,,,,,[265774],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200005593,2,-200005593,non-genus-specific reads in family Microascaceae,,eukaryota,FALSE,8.91749,2198,4,,,93.8769,517.5,10^-131.936,,,,,,,,,"[1756138, 1295161]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200010780,2,-200010780,non-genus-specific reads in family Parvoviridae,,viruses,FALSE,8.93372,2202,7,,,88.463,269.286,10^-125.36,,,,,,,,,[3042448],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200010841,2,-200010841,non-genus-specific reads in family Microviridae,,viruses,FALSE,1.98798,490,1,,,80.952,147,10^-49.3552,,,,,,,,,[2202644],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200147546,2,-200147546,non-genus-specific reads in family Elaphomycetaceae,,eukaryota,FALSE,17.2183,4244,7,,,96.6707,226.571,10^-72.3665,,,,,,,,,[887021],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200563835,2,-200563835,non-genus-specific reads in family Chitinophagaceae,,bacteria,FALSE,1.07107,264,1,,,87.069,116,10^-46.0271,,,,,,,,,[1869212],0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
+-200687329,2,-200687329,non-genus-specific reads in family Anelloviridae,,viruses,FALSE,3188.91,786009,1297,,,91.455,551.281,10^-253.211,,,,,,,,,"[2055263, 432261, 68887]",0,RDC_INC_PAN_bi_006_775873_taxon_report,PAN006,Standard SISPA
