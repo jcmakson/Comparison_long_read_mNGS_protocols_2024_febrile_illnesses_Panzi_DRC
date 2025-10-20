@@ -2,14 +2,12 @@
 title: "Comparison and evaluation of long-read shotgun metagenomic protocols applied
   for investigating the unknown outbreak in Panzi, the Democratic Republic of the
   Congo"
-  
 author: "Makangara-Cigolo et al. 2025"
-
 date: "2025-10-16"
-output: prettydoc::html_pretty
+output: html_document
+#output: prettydoc::html_pretty
 #output: flexdashboard::flex_dashboard
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
